@@ -1,3 +1,147 @@
 {
-  "_comment": "Filled in Phase 3 — see docs/phases/03-content-i18n.md for translation guide."
+  "common": {
+    "logoAlt": "AERIS by Korijob"
+  },
+  "header": {
+    "ctaInquiry": "Free Consultation",
+    "logoAlt": "AERIS by Korijob"
+  },
+  "hero": {
+    "eyebrow": "Balcony · Indoor Air Environment Solutions",
+    "headline": "Complete Indoor Air\nEnvironment Design\nStarting from the Balcony",
+    "description": "Airflow, backflow, and ventilation issues — solved in one system. AERIS analyzes your space and engineers the solution.",
+    "tags": {
+      "engineered": "ENGINEERED",
+      "clean": "CLEAN",
+      "reliable": "RELIABLE"
+    },
+    "ctaPrimary": "Contact Us",
+    "ctaSecondary": "View Solutions"
+  },
+  "why": {
+    "eyebrow": "Why AERIS?",
+    "headline": "Problems You Face\nEvery Day Indoors",
+    "description": "Issues you can no longer ignore — AERIS resolves them at the root.",
+    "cards": {
+      "mold": { "title": "Mold & Condensation", "tag": "Humidity Control Required" },
+      "odor": { "title": "Odor & Poor Ventilation", "tag": "Ventilation Design Required" },
+      "humidity": { "title": "Humidity Imbalance", "tag": "Dehumidification Required" },
+      "common": { "title": "Common Area Management", "tag": "Individual System Required" }
+    }
+  },
+  "solutions": {
+    "eyebrow": "SOLUTIONS",
+    "headline": "AERIS Solutions\nFor Your Space",
+    "tabs": {
+      "shat": "Integrated HVAC (SHAT)",
+      "drdh": "Built-in Dehumidifier (DRDH)",
+      "radm": "Window/Module (RADM)",
+      "arms": "Certification (ARMS)"
+    },
+    "shat": {
+      "title": "Integrated HVAC System",
+      "description": "Integrated control for ventilation, dehumidification, purification, and sterilization",
+      "specs": [
+        "85%+ ventilation efficiency → Minimized energy loss",
+        "Built-in PM2.5 sensor → Real-time air quality & auto control",
+        "BMS & app integration → Remote monitoring and scheduling",
+        "18 dB quiet operation → No sleep or focus disturbance"
+      ],
+      "cta": "Consult on SHAT"
+    },
+    "drdh": {
+      "title": "Built-in Dehumidifier",
+      "description": "Custom built-in dehumidification for optimal indoor humidity.",
+      "specs": [
+        "Space-optimized design for maximum dehumidification",
+        "Energy-efficient inverter technology",
+        "Heat exchange maintains indoor comfort",
+        "Auto control and scheduling supported"
+      ],
+      "cta": "Consult on DRDH"
+    },
+    "radm": {
+      "title": "Window/Module Unit",
+      "description": "Modular and window-mounted solutions — no construction required.",
+      "specs": [
+        "Tool-free installation",
+        "Modular expandability",
+        "Window airtight structure",
+        "Remote control supported"
+      ],
+      "cta": "Consult on RADM"
+    },
+    "arms": {
+      "title": "Certification & Evidence",
+      "description": "Verified performance data and certifications for every AERIS claim.",
+      "specs": [
+        "National accredited test reports",
+        "Government certified (Environment & Industry)",
+        "Field application data available",
+        "Comparative analysis reports provided"
+      ],
+      "cta": "Request Certification Data"
+    }
+  },
+  "useCases": {
+    "eyebrow": "Scenarios",
+    "headline": "Applications by Space",
+    "cards": {
+      "balcony": { "space": "Balcony", "tags": ["Ventilation", "Dehumidification", "Condensation Prevention"] },
+      "bathroom": { "space": "Bathroom", "tags": ["Ventilation", "Sterilization", "Odor Removal"] },
+      "dressroom": { "space": "Dressing Room", "tags": ["Dehumidification", "Purification", "Garment Protection"] },
+      "window": { "space": "Window Unit", "tags": ["Flexible Install", "Ventilation"] }
+    }
+  },
+  "process": {
+    "headline": "Our Process",
+    "steps": {
+      "1": { "title": "Free Consultation", "description": "Submit online or by phone. Our team contacts you within 24 business hours." },
+      "2": { "title": "On-site Diagnosis", "description": "We visit to precisely measure air quality, humidity, and ventilation." },
+      "3": { "title": "Custom Proposal", "description": "We design and propose the optimal solution based on measurement data." },
+      "4": { "title": "Installation", "description": "Installation and post-installation inspection after scheduling." },
+      "5": { "title": "Ongoing Support", "description": "Regular maintenance, remote monitoring, and emergency A/S." }
+    }
+  },
+  "faq": {
+    "headline": "FAQ",
+    "items": {
+      "q1": { "question": "How long does installation take?", "answer": "Residential: 1–2 days. Commercial: 3–7 days. Exact timelines provided after on-site assessment." },
+      "q2": { "question": "Compatible with existing ventilation?", "answer": "We assess existing systems during on-site diagnosis and choose to integrate or replace. Existing ducts are reused where possible." },
+      "q3": { "question": "How loud is the system?", "answer": "SHAT operates at 18 dB — quieter than a library (30 dB). Night mode runs at even lower output." },
+      "q4": { "question": "How does a B2B project proceed?", "answer": "Consultation → Survey → Proposal → Quote → Contract → Installation → Ongoing Support. A dedicated PM for larger projects." },
+      "q5": { "question": "What warranty is provided?", "answer": "1-year free A/S standard. Maintenance contracts include remote monitoring and scheduled inspections. Emergency A/S within 48 business hours." }
+    }
+  },
+  "contact": {
+    "eyebrow": "CONTACT",
+    "headline": "Request a Consultation",
+    "subtext": "Leave your inquiry and our team will reach out within 24 business hours.",
+    "fields": {
+      "name": "Name", "phone": "Phone", "email": "Email",
+      "type": "Inquiry Type", "typeB2b": "B2B (Project / Facilities)", "typeB2c": "B2C (Residential)",
+      "spaces": "Applicable Spaces (multi-select)",
+      "spaceBalcony": "Balcony", "spaceBathroom": "Bathroom", "spaceDressroom": "Dressing Room", "spaceWindow": "Window Unit", "spaceEtc": "Other",
+      "interests": "Solutions of Interest (multi-select)",
+      "interestShat": "Integrated HVAC (SHAT)", "interestDrdh": "Built-in Dehumidifier (DRDH)", "interestRadm": "Window/Module (RADM)", "interestUndecided": "Undecided",
+      "message": "Message",
+      "agreeTerms": "I agree to the collection and use of personal information.",
+      "agreeTermsLink": "View full text"
+    },
+    "placeholders": {
+      "name": "John Doe", "phone": "010-0000-0000", "email": "name@example.com",
+      "message": "Please describe the project scale, timeline, and any questions."
+    },
+    "submit": "Submit Inquiry",
+    "submitting": "Sending...",
+    "success": "Your inquiry has been received. We will contact you within 24 business hours.",
+    "error": "Something went wrong. Please try again later."
+  },
+  "footer": {
+    "brandLine": "AERIS by Korijob",
+    "labels": { "tel": "Phone", "sales": "Sales", "bizNumber": "Business Reg. No." },
+    "telValue": "TBD", "salesValue": "TBD", "bizNumberValue": "TBD",
+    "legal": { "privacy": "Privacy Policy", "terms": "Terms of Service" },
+    "copyright": "© {year} AERIS (Korijob), All rights reserved."
+  }
 }
