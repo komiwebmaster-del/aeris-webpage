@@ -299,12 +299,12 @@ interface ContainerProps {
 
 ## ✅ Definition of Done (Phase 1)
 
-- [ ] 11개 컴포넌트 모두 구현 + named export
-- [ ] `/dev` 페이지에서 모든 컴포넌트가 시안과 시각적으로 일치
-- [ ] 각 컴포넌트가 토큰(CSS 변수)만 사용 — 매직 넘버·하드코딩 색상 없음
-- [ ] 키보드로 모든 인터랙티브 요소 조작 가능
-- [ ] focus ring 모든 컴포넌트에서 명확하게 보임
-- [ ] TypeScript strict 무에러 / `pnpm build` 무에러
+- [x] 11개 컴포넌트 모두 구현 + named export
+- [x] `/dev` 페이지에서 모든 컴포넌트가 시안과 시각적으로 일치
+- [x] 각 컴포넌트가 토큰(CSS 변수)만 사용 — 매직 넘버·하드코딩 색상 없음
+- [x] 키보드로 모든 인터랙티브 요소 조작 가능
+- [x] focus ring 모든 컴포넌트에서 명확하게 보임
+- [x] TypeScript strict 무에러 / `pnpm build` 무에러
 
 ---
 
