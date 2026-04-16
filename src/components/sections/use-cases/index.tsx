@@ -21,31 +21,27 @@ export function UseCasesSection() {
     <Section background="white" id="use-cases">
       <Container>
         {/* Header */}
-        <div className="mb-10 space-y-3 lg:mb-12">
+        <div className="mb-10 space-y-3 lg:mb-16">
           <Eyebrow>{t('eyebrow')}</Eyebrow>
           <h2 className="text-h1 font-bold text-navy-900">{t('headline')}</h2>
         </div>
 
-        {/* Grid — mobile: 1 col / desktop: asymmetric 2x2 */}
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:grid-rows-2 lg:gap-6">
+        {/* Mobile: 1 col / Desktop: 4 col zigzag */}
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
           {caseIds.map((id, index) => {
             const tags = t.raw(`cards.${id}.tags`) as string[];
+            // 짝수(0,2) = 위쪽, 홀수(1,3) = 아래쪽 (지그재그)
+            const isOffset = index % 2 === 1;
 
             return (
               <div
                 key={id}
-                className={`group overflow-hidden rounded-md border border-gray-200 bg-white transition-shadow duration-base hover:shadow-md ${
-                  index === 0 ? 'lg:row-span-2' : ''
+                className={`group flex flex-col gap-4 ${
+                  isOffset ? 'lg:mt-24' : ''
                 }`}
               >
-                {/* Image */}
-                <div
-                  className={`relative w-full overflow-hidden bg-gray-100 ${
-                    index === 0
-                      ? 'aspect-[4/5] lg:aspect-auto lg:h-[calc(100%-80px)]'
-                      : 'aspect-[4/3]'
-                  }`}
-                >
+                {/* Image area — 보더는 이미지만 감쌈 */}
+                <div className="relative aspect-[3/4] w-full overflow-hidden rounded-md border border-gray-300 bg-white">
                   <Image
                     src={imagePlaceholders[id]}
                     alt={t(`cards.${id}.space`)}
@@ -54,14 +50,14 @@ export function UseCasesSection() {
                   />
                 </div>
 
-                {/* Info */}
-                <div className="flex items-center justify-between p-4">
-                  <span className="text-body font-semibold text-navy-900">
+                {/* Title + Tags — 카드 바깥 아래, 가운데 정렬 */}
+                <div className="flex flex-col items-center gap-2 text-center">
+                  <span className="text-body font-bold text-navy-900">
                     {t(`cards.${id}.space`)}
                   </span>
-                  <div className="flex flex-wrap justify-end gap-1">
+                  <div className="flex flex-wrap justify-center gap-1.5">
                     {tags.map((tag) => (
-                      <Badge key={tag} variant="outline" size="sm">
+                      <Badge key={tag} variant="solid" size="sm">
                         {tag}
                       </Badge>
                     ))}
