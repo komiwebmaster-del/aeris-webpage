@@ -1,12 +1,27 @@
+import { HeaderSection } from '@/components/sections/header';
+import { HeroSection } from '@/components/sections/hero';
+import { WhySection } from '@/components/sections/why';
+import { SolutionsSection } from '@/components/sections/solutions';
+import { UseCasesSection } from '@/components/sections/use-cases';
+import { ProcessSection } from '@/components/sections/process';
+import { FaqSection } from '@/components/sections/faq';
+import { ContactSection } from '@/components/sections/contact';
+import { FooterSection } from '@/components/sections/footer';
+
 export default function HomePage() {
   return (
-    <main>
-      <div className="flex min-h-screen items-center justify-center">
-        <div className="text-center">
-          <h1 className="text-display font-bold text-navy-900">AERIS</h1>
-          <p className="mt-4 text-body text-gray-700">Air, Engineered.</p>
-        </div>
-      </div>
-    </main>
+    <>
+      <HeaderSection />
+      <main>
+        <HeroSection />
+        <WhySection />
+        <SolutionsSection />
+        <UseCasesSection />
+        <ProcessSection />
+        <FaqSection />
+        <ContactSection />
+      </main>
+      <FooterSection />
+    </>
   );
 }
