@@ -21,21 +21,6 @@ import {
 
 type FormStatus = 'idle' | 'submitting' | 'success' | 'error';
 
-const spaceOptions = [
-  'spaceBalcony',
-  'spaceBathroom',
-  'spaceDressroom',
-  'spaceWindow',
-  'spaceEtc',
-] as const;
-
-const interestOptions = [
-  'interestShat',
-  'interestDrdh',
-  'interestRadm',
-  'interestUndecided',
-] as const;
-
 export function ContactSection() {
   const t = useTranslations('contact');
   const [status, setStatus] = useState<FormStatus>('idle');
@@ -43,34 +28,13 @@ export function ContactSection() {
   const {
     register,
     handleSubmit,
-    watch,
-    setValue,
     formState: { errors },
   } = useForm<InquiryInput>({
     resolver: zodResolver(inquirySchema),
-    defaultValues: {
-      spaces: [],
-      interests: [],
-    },
   });
 
-  const spaces = watch('spaces') ?? [];
-  const interests = watch('interests') ?? [];
-
-  const toggleArray = (
-    field: 'spaces' | 'interests',
-    value: string,
-    current: string[],
-  ) => {
-    const next = current.includes(value)
-      ? current.filter((v) => v !== value)
-      : [...current, value];
-    setValue(field, next, { shouldValidate: true });
-  };
-
-  const onSubmit = async (_data: InquiryInput) => {
+  const onSubmit = async () => {
     setStatus('submitting');
-    // Phase 4에서 실제 API 연동 — 현재는 UI 검증용 mock
     await new Promise((r) => setTimeout(r, 1000));
     setStatus('success');
   };
@@ -86,7 +50,7 @@ export function ContactSection() {
         </FadeUp>
 
         {/* Form Card */}
-        <FadeUp delay={0.15} className="rounded-lg border border-gray-300 bg-white p-6 lg:p-12">
+        <FadeUp delay={0.15} className="rounded-lg border border-gray-300 bg-white p-6 md:p-10 lg:p-16">
           {status === 'success' ? (
             <div className="flex min-h-[200px] items-center justify-center text-center">
               <p className="text-h3 font-medium text-navy-900">{t('success')}</p>
@@ -147,7 +111,7 @@ export function ContactSection() {
                 required
                 error={errors.type?.message}
               >
-                <div className="flex gap-6">
+                <div className="flex flex-col gap-3 sm:flex-row sm:gap-6">
                   <Radio
                     {...register('type')}
                     value="b2b"
@@ -161,38 +125,9 @@ export function ContactSection() {
                 </div>
               </FormField>
 
-              {/* Applicable Spaces */}
-              <FormField label={t('fields.spaces')}>
-                <div className="flex flex-wrap gap-3">
-                  {spaceOptions.map((key) => (
-                    <Checkbox
-                      key={key}
-                      label={t(`fields.${key}`)}
-                      checked={spaces.includes(key)}
-                      onChange={() => toggleArray('spaces', key, spaces)}
-                    />
-                  ))}
-                </div>
-              </FormField>
-
-              {/* Interests */}
-              <FormField label={t('fields.interests')}>
-                <div className="flex flex-wrap gap-3">
-                  {interestOptions.map((key) => (
-                    <Checkbox
-                      key={key}
-                      label={t(`fields.${key}`)}
-                      checked={interests.includes(key)}
-                      onChange={() => toggleArray('interests', key, interests)}
-                    />
-                  ))}
-                </div>
-              </FormField>
-
               {/* Message */}
               <FormField
                 label={t('fields.message')}
-                required
                 error={errors.message?.message}
               >
                 <Textarea
@@ -200,7 +135,6 @@ export function ContactSection() {
                   rows={5}
                   placeholder={t('placeholders.message')}
                   error={errors.message?.message}
-                  aria-required="true"
                 />
               </FormField>
 

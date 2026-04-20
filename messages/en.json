@@ -225,13 +225,8 @@
     "fields": {
       "name": "Name", "phone": "Phone", "email": "Email",
       "type": "Inquiry Type", "typeB2b": "B2B (Project / Facilities)", "typeB2c": "B2C (Residential)",
-      "spaces": "Applicable Spaces (multi-select)",
-      "spaceBalcony": "Balcony", "spaceBathroom": "Bathroom", "spaceDressroom": "Dressing Room", "spaceWindow": "Window Unit", "spaceEtc": "Other",
-      "interests": "Solutions of Interest (multi-select)",
-      "interestShat": "Integrated HVAC (SHAT)", "interestDrdh": "Built-in Dehumidifier (DRDH)", "interestRadm": "Window/Module (RADM)", "interestUndecided": "Undecided",
-      "message": "Message",
-      "agreeTerms": "I agree to the collection and use of personal information.",
-      "agreeTermsLink": "View full text"
+      "message": "Message (optional)",
+      "agreeTerms": "I agree to the collection and use of personal information."
     },
     "placeholders": {
       "name": "John Doe", "phone": "010-0000-0000", "email": "name@example.com",

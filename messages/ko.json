@@ -271,20 +271,8 @@
       "type": "문의 유형",
       "typeB2b": "B2B (프로젝트·설비)",
       "typeB2c": "B2C (가정·개인)",
-      "spaces": "적용 공간 (복수 선택)",
-      "spaceBalcony": "발코니",
-      "spaceBathroom": "욕실",
-      "spaceDressroom": "드레스룸",
-      "spaceWindow": "창문형",
-      "spaceEtc": "기타",
-      "interests": "관심 솔루션 (복수 선택)",
-      "interestShat": "통합공조 (SHAT)",
-      "interestDrdh": "빌트인 제습 (DRDH)",
-      "interestRadm": "창문형/모듈 (RADM)",
-      "interestUndecided": "미정",
-      "message": "문의 내용",
-      "agreeTerms": "개인정보 수집 및 이용에 동의합니다.",
-      "agreeTermsLink": "전문 보기"
+      "message": "문의 내용 (선택)",
+      "agreeTerms": "개인정보 수집 및 이용에 동의합니다."
     },
     "placeholders": {
       "name": "홍길동",
