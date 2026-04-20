@@ -27,30 +27,31 @@ export function BrandConceptSection() {
           </Eyebrow>
         </FadeUp>
 
-        <div className="mt-12 grid grid-cols-1 items-center gap-16 lg:mt-16 lg:grid-cols-2 lg:gap-24">
+        <div className="mt-10 grid grid-cols-1 items-center gap-10 md:mt-14 md:gap-14 lg:mt-16 lg:grid-cols-2 lg:gap-24">
           <FadeUp delay={0.1} className="flex items-center justify-center">
             <Image
               src="/images/logo/aeris-logo-white.png"
               alt={tc('logoAlt')}
               width={2270}
               height={668}
-              className="h-auto w-full max-w-xs lg:max-w-sm"
+              sizes="(min-width: 1024px) 384px, (min-width: 640px) 320px, 240px"
+              className="h-auto w-full max-w-[240px] sm:max-w-xs lg:max-w-sm"
             />
           </FadeUp>
 
-          <ul className="flex flex-col gap-6 lg:gap-8">
+          <ul className="flex flex-col gap-5 md:gap-6 lg:gap-8">
             {acronym.map(({ id, first, rest }, idx) => (
               <FadeUp
                 key={id}
                 as="li"
                 delay={0.15 + idx * 0.07}
-                className="grid grid-cols-1 gap-1 md:grid-cols-[minmax(0,auto),minmax(0,1fr)] md:items-baseline md:gap-12"
+                className="grid grid-cols-1 gap-y-1 md:grid-cols-[minmax(0,auto),minmax(0,1fr)] md:items-baseline md:gap-x-8 lg:gap-x-12"
               >
                 <span className="text-h1 font-bold leading-tight tracking-tight">
                   <span className="text-blue-300">{first}</span>
                   <span className="text-white">{rest}</span>
                 </span>
-                <span className="text-body leading-relaxed text-gray-300">
+                <span className="break-keep text-body leading-relaxed text-gray-300">
                   {t(`items.${id}`)}
                 </span>
               </FadeUp>

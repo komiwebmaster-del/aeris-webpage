@@ -10,9 +10,9 @@ export function ProcessSection() {
   return (
     <Section background="gray" id="process">
       <Container>
-        <div className="flex flex-col gap-10 lg:flex-row lg:gap-24">
+        <div className="flex flex-col gap-10 md:gap-16 lg:flex-row lg:gap-24">
           {/* Left — Headline with vertical bar */}
-          <div className="flex items-start gap-4 lg:w-64 lg:shrink-0">
+          <div className="flex items-start gap-4 md:w-56 md:shrink-0 lg:w-64">
             <div className="h-full min-h-[2rem] w-1 rounded-full bg-navy-900" />
             <h2 className="text-h1 font-bold text-navy-900">
               {t('headline')}

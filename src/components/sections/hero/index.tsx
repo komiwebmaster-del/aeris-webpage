@@ -19,7 +19,11 @@ export function HeroSection() {
   ] as const;
 
   return (
-    <Section background="navy" id="hero" className="pt-[calc(64px+var(--section-py-mobile))] lg:pt-[calc(72px+var(--section-py-desktop))]">
+    <Section
+      background="navy"
+      id="hero"
+      className="pt-[calc(var(--header-h)+var(--section-py-mobile))] md:pt-[calc(var(--header-h)+var(--section-py-md))] lg:pt-[calc(var(--header-h)+var(--section-py-desktop))]"
+    >
       <Container>
         <div className="flex flex-col gap-10 lg:flex-row lg:items-center lg:gap-16">
           {/* Text — Left */}
@@ -30,20 +34,20 @@ export function HeroSection() {
               </Eyebrow>
             </FadeUp>
 
-            <FadeUp delay={0.1}>
-              <h1 className="whitespace-pre-line text-display font-bold text-white">
+            <FadeUp delay={0.08}>
+              <h1 className="whitespace-pre-line break-keep text-display font-bold text-white max-w-[min(100%,640px)]">
                 {t('headline')}
               </h1>
             </FadeUp>
 
-            <FadeUp delay={0.2}>
-              <p className="max-w-md text-body text-gray-300">
+            <FadeUp delay={0.16}>
+              <p className="break-keep text-body-lg text-gray-300 max-w-[min(90vw,560px)]">
                 {t('description')}
               </p>
             </FadeUp>
 
             {/* Tags */}
-            <FadeUp delay={0.28} className="flex flex-wrap gap-2">
+            <FadeUp delay={0.22} className="flex flex-wrap gap-2 min-w-0">
               {tags.map((tag) => (
                 <Badge key={tag} variant="dark">
                   {tag}
@@ -52,7 +56,7 @@ export function HeroSection() {
             </FadeUp>
 
             {/* CTAs */}
-            <FadeUp delay={0.36} className="flex flex-wrap gap-3">
+            <FadeUp delay={0.28} className="flex flex-wrap gap-x-3 gap-y-2">
               <Button
                 variant="primary"
                 size="lg"

@@ -8,7 +8,7 @@ export function FooterSection() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-gray-300 bg-gray-50 py-8 lg:py-16">
+    <footer className="border-t border-gray-300 bg-gray-50 py-8 md:py-12 lg:py-16">
       <Container>
         <FadeUp delay={0} className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
           {/* Left — Brand & Contact */}
@@ -42,7 +42,7 @@ export function FooterSection() {
           </div>
 
           {/* Right — Legal Links */}
-          <div className="flex gap-6 text-small text-gray-500 md:flex-col md:items-end md:gap-2">
+          <div className="flex flex-wrap gap-x-6 gap-y-2 text-small text-gray-500 md:flex-col md:items-end md:gap-y-2">
             <Link
               href="/legal/privacy"
               className="transition-colors hover:text-navy-900"

@@ -26,8 +26,8 @@ export function UseCasesSection() {
           <h2 className="text-h1 font-bold text-navy-900">{t('headline')}</h2>
         </div>
 
-        {/* Mobile: 1 col / Desktop: 4 col zigzag */}
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
+        {/* Mobile: 1 col / Tablet: 2 col / Desktop: 4 col zigzag */}
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-2 md:gap-6 lg:grid-cols-4 lg:gap-6">
           {caseIds.map((id, index) => {
             const tags = t.raw(`cards.${id}.tags`) as string[];
             // 짝수(0,2) = 위쪽, 홀수(1,3) = 아래쪽 (지그재그)
@@ -37,7 +37,7 @@ export function UseCasesSection() {
               <div
                 key={id}
                 className={`group flex flex-col gap-4 ${
-                  isOffset ? 'lg:mt-24' : ''
+                  isOffset ? 'md:mt-12 lg:mt-24' : ''
                 }`}
               >
                 {/* Image area — 보더는 이미지만 감쌈 */}
@@ -46,6 +46,7 @@ export function UseCasesSection() {
                     src={imagePlaceholders[id]}
                     alt={t(`cards.${id}.space`)}
                     fill
+                    sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
                     className="object-cover transition-transform duration-slow ease-out group-hover:scale-105"
                   />
                 </div>

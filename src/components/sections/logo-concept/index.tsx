@@ -30,6 +30,7 @@ function LogoArtwork({ alt }: { alt: string }) {
         alt={alt}
         width={2270}
         height={668}
+        sizes="(min-width: 1024px) 260px, 220px"
         className="h-auto w-[220px] lg:w-[260px]"
       />
     </div>
@@ -67,9 +68,12 @@ export function LogoConceptSection() {
     >
       <WaveBackground fullBleed />
       <Container className="relative z-10">
-        <div className="grid grid-cols-1 items-start gap-12 md:grid-cols-[2fr_3fr] md:gap-16 lg:gap-20">
+        <div className="grid grid-cols-1 items-start gap-10 md:grid-cols-[2fr_3fr] md:gap-14 lg:gap-20">
           {/* Left — Logo Artwork */}
-          <FadeUp delay={0} className="md:sticky md:top-28">
+          <FadeUp
+            delay={0}
+            className="md:sticky md:top-[calc(var(--header-h)+var(--space-6))]"
+          >
             <LogoArtwork alt={tc('logoAlt')} />
           </FadeUp>
 

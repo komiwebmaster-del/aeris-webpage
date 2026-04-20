@@ -21,7 +21,7 @@ export function HeaderSection() {
   return (
     <header
       className={cn(
-        'fixed inset-x-0 top-0 z-50 h-16 bg-white transition-shadow duration-base lg:h-[72px]',
+        'fixed inset-x-0 top-0 z-50 h-[var(--header-h)] bg-white transition-shadow duration-base',
         scrolled && 'shadow-sm',
       )}
     >
@@ -34,6 +34,7 @@ export function HeaderSection() {
             width={2270}
             height={668}
             priority
+            sizes="(min-width: 1024px) 128px, 112px"
             className="h-7 w-auto lg:h-8"
           />
         </Link>

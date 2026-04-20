@@ -31,10 +31,10 @@ export function WhySection() {
   return (
     <Section background="white" id="why">
       <Container>
-        <FadeUp delay={0} className="mb-12 flex flex-col gap-4 lg:mb-16 lg:flex-row lg:items-end lg:justify-between">
+        <FadeUp delay={0} className="mb-12 flex flex-col gap-4 md:mb-14 md:items-start lg:mb-16 lg:flex-row lg:items-end lg:justify-between">
           <div className="space-y-4">
             <Eyebrow>{t('eyebrow')}</Eyebrow>
-            <h2 className="text-display font-bold leading-tight text-navy-900">
+            <h2 className="break-keep text-display font-bold leading-tight text-navy-900 max-w-[min(100%,720px)]">
               {headlineLines.map((line, idx) => (
                 <span key={idx} className="block">
                   <HeadlineLine line={line} />
@@ -42,12 +42,12 @@ export function WhySection() {
               ))}
             </h2>
           </div>
-          <p className="max-w-sm whitespace-pre-line text-body leading-relaxed text-gray-700 lg:text-right">
+          <p className="break-keep max-w-sm whitespace-pre-line text-body leading-relaxed text-gray-700 lg:text-right">
             {t('description')}
           </p>
         </FadeUp>
 
-        <div className="grid grid-cols-2 gap-6 lg:grid-cols-4 lg:gap-8">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4 lg:gap-8">
           {cardIds.map((id, idx) => (
             <FadeUp key={id} delay={0.1 + idx * 0.08}>
               <div className="group flex flex-col gap-4">

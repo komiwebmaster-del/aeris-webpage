@@ -7,13 +7,13 @@ import { WaveBackground } from '@/components/decor/wave-background';
 
 const valueIds = ['engineered', 'clean', 'quiet', 'reliable', 'premium'] as const;
 
-// 데스크톱 지그재그 V-shape 오프셋 — 1,5 상단 / 2,4 중단 / 3 하단
+// 지그재그 V-shape 오프셋 — md(태블릿): 절반, lg(데스크톱): 전체
 const desktopOffsets: Record<(typeof valueIds)[number], string> = {
-  engineered: 'lg:pt-0',
-  clean: 'lg:pt-24',
-  quiet: 'lg:pt-48',
-  reliable: 'lg:pt-24',
-  premium: 'lg:pt-0',
+  engineered: 'md:pt-0 lg:pt-0',
+  clean: 'md:pt-12 lg:pt-24',
+  quiet: 'md:pt-24 lg:pt-48',
+  reliable: 'md:pt-12 lg:pt-24',
+  premium: 'md:pt-0 lg:pt-0',
 };
 
 export function BrandCoreSection() {
@@ -29,7 +29,7 @@ export function BrandCoreSection() {
         </FadeUp>
 
         <FadeUp delay={0.1}>
-          <h2 className="mx-auto mt-10 max-w-3xl text-center text-display font-bold leading-tight text-navy-900 lg:mt-12">
+          <h2 className="break-keep mx-auto mt-10 max-w-3xl text-center text-display font-bold leading-tight text-navy-900 md:mt-12">
             {headlineParts.map((line, idx) => (
               <span key={idx} className="block">
                 {line.split('AERIS').map((chunk, i, arr) => (
@@ -46,7 +46,7 @@ export function BrandCoreSection() {
         </FadeUp>
 
         {/* 중앙 비주얼 placeholder — 에셋 수령 예정 */}
-        <FadeUp delay={0.18} className="relative mx-auto mt-10 aspect-[16/9] w-full max-w-3xl lg:mt-12">
+        <FadeUp delay={0.18} className="relative mx-auto mt-10 aspect-[16/9] w-full max-w-3xl md:mt-12">
           <div className="flex h-full w-full items-center justify-center rounded-lg bg-blue-50">
             <p className="text-caption font-medium uppercase tracking-wider text-blue-500">
               3D Isometric Visual — 에셋 수령 예정
@@ -55,7 +55,7 @@ export function BrandCoreSection() {
         </FadeUp>
 
         {/* 5-포인트 가치 */}
-        <ul className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-5 md:gap-6 lg:mt-8 lg:gap-8">
+        <ul className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 md:mt-12 md:grid-cols-5 md:gap-6 lg:mt-8 lg:gap-8">
           {valueIds.map((id, idx) => (
             <FadeUp
               key={id}
