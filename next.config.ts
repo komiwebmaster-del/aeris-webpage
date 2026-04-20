@@ -7,6 +7,10 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: '..',
   },
+  images: {
+    qualities: [75, 90, 95],
+    formats: ['image/avif', 'image/webp'],
+  },
 };
 
 export default withNextIntl(nextConfig);
