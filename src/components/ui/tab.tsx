@@ -41,7 +41,7 @@ export function Tab({ tabs, value, onChange, className }: TabProps) {
     <div
       role="tablist"
       className={cn(
-        'flex overflow-x-auto border-b border-gray-200 scrollbar-none',
+        'grid grid-cols-2 gap-x-2 border-b border-gray-200 sm:flex sm:gap-x-0 sm:overflow-x-auto sm:scrollbar-none',
         className,
       )}
     >
@@ -59,7 +59,7 @@ export function Tab({ tabs, value, onChange, className }: TabProps) {
             onClick={() => onChange(tab.value)}
             onKeyDown={(e) => handleKeyDown(e, index)}
             className={cn(
-              'relative flex-1 cursor-pointer whitespace-nowrap px-4 py-3 text-body font-medium',
+              'relative cursor-pointer px-3 py-3 text-small font-medium leading-snug sm:flex-1 sm:whitespace-nowrap sm:px-4 sm:text-body',
               'transition-colors duration-fast ease-out',
               isActive
                 ? 'text-navy-900'

@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import Image from 'next/image';
 import useEmblaCarousel from 'embla-carousel-react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
@@ -13,11 +13,22 @@ interface CarouselProps {
 
 export function Carousel({ images, className }: CarouselProps) {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false });
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
   const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
 
-  const currentIndex = emblaApi?.selectedScrollSnap() ?? 0;
+  useEffect(() => {
+    if (!emblaApi) return;
+    const onSelect = () => setCurrentIndex(emblaApi.selectedScrollSnap());
+    onSelect();
+    emblaApi.on('select', onSelect);
+    emblaApi.on('reInit', onSelect);
+    return () => {
+      emblaApi.off('select', onSelect);
+      emblaApi.off('reInit', onSelect);
+    };
+  }, [emblaApi]);
 
   return (
     <div className={cn('relative', className)}>
@@ -25,11 +36,12 @@ export function Carousel({ images, className }: CarouselProps) {
         <div className="flex">
           {images.map((image, index) => (
             <div key={index} className="min-w-0 flex-[0_0_100%]">
-              <div className="relative aspect-[16/10] bg-gray-100">
+              <div className="relative aspect-[4/3] bg-gray-100 sm:aspect-[16/10]">
                 <Image
                   src={image.src}
                   alt={image.alt}
                   fill
+                  sizes="(min-width: 1024px) 480px, (min-width: 768px) 50vw, 100vw"
                   className="object-cover"
                 />
               </div>
