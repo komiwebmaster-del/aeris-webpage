@@ -18,27 +18,72 @@
     "ctaPrimary": "지금 문의하기",
     "ctaSecondary": "솔루션 보기"
   },
-  "why": {
-    "eyebrow": "왜 AERIS인가?",
-    "headline": "발코니부터 실내 곳곳에서\n매일 겪는 문제들",
-    "description": "더 이상 방치할 수 없는 문제들, AERIS가 근본적으로 해결해 드립니다.",
+  "brandOverview": {
+    "eyebrow": "ABOUT AERIS - Brand Overview",
+    "headlineKo": "공기를 설계하다.",
+    "description": "<brand>AERIS</brand>는 환기, 제습, 정화, 살균 기능을 통합하여\n실내 공기환경을 공학적으로 설계하고 운영하는 HVAC 브랜드입니다.",
     "cards": {
-      "mold": {
-        "title": "곰팡이·결로",
-        "tag": "습도 제어 필요"
+      "system": {
+        "title": "통합 시스템 브랜드",
+        "body": "AERIS는 단순한 공기 관련 제품 브랜드가 아닙니다.\n공기의 흐름, 습도, 청정도, 운용 효율까지 <em>하나의 시스템으로 통합</em>해, 실내 공간의 공기환경을 더 정밀하고 안정적으로 관리하는 브랜드입니다."
       },
-      "odor": {
-        "title": "악취·환기 부족",
-        "tag": "환기 설계 필요"
-      },
-      "humidity": {
-        "title": "습도 불균형",
-        "tag": "제습 솔루션 필요"
-      },
-      "common": {
-        "title": "공용부 관리 한계",
-        "tag": "개별 시스템 필요"
+      "engineering": {
+        "title": "엔지니어링 기반 철학",
+        "body": "AERIS의 본질은 감성적 공기 이미지가 아니라, <em>공기를 기술과 시스템으로 설계하는 태도</em>에 있습니다. 보이지 않는 공기를 데이터와 엔지니어링으로 다루며, 공간의 쾌적함을 기준으로 만드는 것이 핵심 가치입니다."
       }
+    }
+  },
+  "brandCore": {
+    "eyebrow": "ABOUT AERIS - Brand Core",
+    "headline": "더 나은 실내 공기환경을 위해 AERIS가\n약속하는 가치들",
+    "values": {
+      "engineered": { "ko": "정밀한 설계", "en": "Engineered" },
+      "clean":      { "ko": "깨끗한 공기", "en": "Clean" },
+      "quiet":      { "ko": "조용한 운전", "en": "Quiet" },
+      "reliable":   { "ko": "신뢰 가능한 성능", "en": "Reliable" },
+      "premium":    { "ko": "공간의 품격", "en": "Premium" }
+    }
+  },
+  "brandConcept": {
+    "eyebrow": "ABOUT AERIS - Brand Concept",
+    "items": {
+      "air":        "공기, 가장 본질적인 요소",
+      "engineered": "기술과 구조로 설계하는 방식",
+      "reliable":   "신뢰 가능한 성능, 안정적인 운전",
+      "indoor":     "실내 환경 중심의 접근",
+      "system":     "통합 솔루션으로 작동하는 구조"
+    }
+  },
+  "logoConcept": {
+    "title": "LOGO CONCEPT",
+    "body": "AERIS 로고는 실내 공기환경을 공학적으로 설계하는 브랜드 철학을 워드마크 형태로 시각화한 아이덴티티입니다.\n\n견고한 대문자 구조는 HVAC 기술 브랜드의 안정성, 정밀성, 신뢰성을 표현하며,\n로고를 가로지르는 유선형 모티프는 공간을 흐르는 공기의 이동과 순환, 그리고 하나의 시스템 안에서\n유기적으로 작동하는 통합 공기환경 솔루션의 개념을 상징합니다."
+  },
+  "keyVisual": {
+    "title": "KEY VISUAL MEANING",
+    "items": {
+      "wordmark": {
+        "title": "Wordmark Structure",
+        "body": "안정적이고 단정한 대문자 구조를 통해 기술 기반 브랜드의 신뢰감을 표현"
+      },
+      "flow": {
+        "title": "Flow Motif",
+        "body": "로고를 가로지르는 유선형 요소는 공기의 흐름과 시스템의 연속성을 상징"
+      },
+      "color": {
+        "title": "Color System",
+        "body": "딥 네이비와 블루 톤은 전문성, 청정함, 프리미엄 이미지를 전달"
+      }
+    }
+  },
+  "why": {
+    "eyebrow": "WHY AERIS?",
+    "headline": "드레스룸의 보관환경은\n공기부터 달라야 합니다.\nAERIS는 환기와 제습으로 그 기준을 만듭니다.",
+    "description": "곰팡이, 냄새, 습도 불균형, 환기 부족까지.\n보관 공간에 필요한 공기환경을 시스템으로 관리합니다.",
+    "cards": {
+      "mold":     { "title": "곰팡이·결로",     "tag": "습도 제어 필요" },
+      "humidity": { "title": "습도 불균형",     "tag": "환기 설계 필요" },
+      "common":   { "title": "공용부 관리 한계", "tag": "제습 솔루션 필요" },
+      "odor":     { "title": "악취·환기 부족",   "tag": "개별 시스템 필요" }
     }
   },
   "solutions": {

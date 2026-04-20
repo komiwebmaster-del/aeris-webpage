@@ -18,15 +18,72 @@
     "ctaPrimary": "Contact Us",
     "ctaSecondary": "View Solutions"
   },
-  "why": {
-    "eyebrow": "Why AERIS?",
-    "headline": "Problems You Face\nEvery Day Indoors",
-    "description": "Issues you can no longer ignore — AERIS resolves them at the root.",
+  "brandOverview": {
+    "eyebrow": "ABOUT AERIS - Brand Overview",
+    "headlineKo": "Engineering the air.",
+    "description": "<brand>AERIS</brand> is an HVAC brand that integrates ventilation, dehumidification, purification, and sterilization\nto engineer and operate the indoor air environment.",
     "cards": {
-      "mold": { "title": "Mold & Condensation", "tag": "Humidity Control Required" },
-      "odor": { "title": "Odor & Poor Ventilation", "tag": "Ventilation Design Required" },
-      "humidity": { "title": "Humidity Imbalance", "tag": "Dehumidification Required" },
-      "common": { "title": "Common Area Management", "tag": "Individual System Required" }
+      "system": {
+        "title": "Integrated System Brand",
+        "body": "AERIS is not merely a collection of air-related products.\nWe unify airflow, humidity, cleanliness, and operational efficiency <em>into a single system</em>, managing indoor air environments with greater precision and stability."
+      },
+      "engineering": {
+        "title": "Engineering-led Philosophy",
+        "body": "The essence of AERIS is not a sentimental image of clean air — it is <em>the discipline of designing air through technology and systems</em>. We treat the invisible with data and engineering, making spatial comfort measurable and repeatable."
+      }
+    }
+  },
+  "brandCore": {
+    "eyebrow": "ABOUT AERIS - Brand Core",
+    "headline": "The values AERIS commits to\nfor a better indoor air environment",
+    "values": {
+      "engineered": { "ko": "Engineered Design", "en": "Engineered" },
+      "clean":      { "ko": "Clean Air", "en": "Clean" },
+      "quiet":      { "ko": "Quiet Operation", "en": "Quiet" },
+      "reliable":   { "ko": "Reliable Performance", "en": "Reliable" },
+      "premium":    { "ko": "Premium Space", "en": "Premium" }
+    }
+  },
+  "brandConcept": {
+    "eyebrow": "ABOUT AERIS - Brand Concept",
+    "items": {
+      "air":        "Air — the most essential element",
+      "engineered": "Designed through technology and structure",
+      "reliable":   "Reliable performance, stable operation",
+      "indoor":     "An approach centered on the indoor environment",
+      "system":     "Operating as one integrated system"
+    }
+  },
+  "logoConcept": {
+    "title": "LOGO CONCEPT",
+    "body": "The AERIS wordmark visualizes our brand philosophy: engineering the indoor air environment.\n\nThe solid uppercase structure embodies the stability, precision, and reliability of an HVAC technology brand.\nThe flowing motif crossing the wordmark symbolizes the movement and circulation of air through space,\nand the integrated air-environment solution operating organically within a single system."
+  },
+  "keyVisual": {
+    "title": "KEY VISUAL MEANING",
+    "items": {
+      "wordmark": {
+        "title": "Wordmark Structure",
+        "body": "The stable, composed uppercase structure conveys the trust of a technology-driven brand."
+      },
+      "flow": {
+        "title": "Flow Motif",
+        "body": "The flowing element crossing the wordmark symbolizes the continuity of air and system."
+      },
+      "color": {
+        "title": "Color System",
+        "body": "Deep navy and blue tones communicate professionalism, cleanliness, and a premium image."
+      }
+    }
+  },
+  "why": {
+    "eyebrow": "WHY AERIS?",
+    "headline": "The storage environment of a dressing room\nmust start with the air.\nAERIS sets that standard with ventilation and dehumidification.",
+    "description": "From mold and odor to humidity imbalance and poor ventilation —\nAERIS manages the air environment required for storage as a system.",
+    "cards": {
+      "mold":     { "title": "Mold & Condensation",      "tag": "Humidity Control Required" },
+      "humidity": { "title": "Humidity Imbalance",       "tag": "Ventilation Design Required" },
+      "common":   { "title": "Common Area Management",   "tag": "Dehumidification Required" },
+      "odor":     { "title": "Odor & Poor Ventilation",  "tag": "Individual System Required" }
     }
   },
   "solutions": {
