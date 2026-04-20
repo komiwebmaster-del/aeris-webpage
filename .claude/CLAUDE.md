@@ -149,3 +149,4 @@ docs/01-brand-identity.md, docs/03-design-system.md 를 먼저 읽고,
 | 2026-04-16 | 초기 셋업 |
 | 2026-04-16 | 시안 수령 → 기술 스택 확정 / 솔루션 라인업 추가 / 회사명(코리잡) 반영 |
 | 2026-04-20 | Solutions 섹션 시안 정합 재구성 — 탭 순서·라벨 갱신, 기능·특징·메트릭 스키마 도입 |
+| 2026-04-20 | 반응형 정비 — `--header-h`·`--section-py-md` 토큰 도입, `md:` 브레이크포인트 체계 수립, `next/image` `sizes` 전수 지정, 탭 모바일 2x2 그리드, Carousel Embla select 구독 버그 수정. Contact 폼 5필드 축소(spaces/interests 제거) |
