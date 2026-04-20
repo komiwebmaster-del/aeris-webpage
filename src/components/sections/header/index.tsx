@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import { Button } from '@/components/ui/button';
@@ -26,10 +27,15 @@ export function HeaderSection() {
     >
       <div className="mx-auto flex h-full max-w-container items-center justify-between px-[var(--container-pad-mobile)] lg:px-[var(--container-pad-desktop)]">
         {/* Logo */}
-        <Link href="/" aria-label={t('logoAlt')}>
-          <span className="text-h3 font-bold tracking-tight text-navy-900">
-            AERIS
-          </span>
+        <Link href="/" aria-label={t('logoAlt')} className="flex items-center">
+          <Image
+            src="/images/logo/aeris-logo-navy.png"
+            alt={t('logoAlt')}
+            width={2270}
+            height={668}
+            priority
+            className="h-7 w-auto lg:h-8"
+          />
         </Link>
 
         {/* Right */}
