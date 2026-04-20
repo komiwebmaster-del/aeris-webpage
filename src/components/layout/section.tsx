@@ -24,7 +24,7 @@ export function Section({
     <section
       id={id}
       className={cn(
-        'py-[var(--section-py-mobile)] lg:py-[var(--section-py-desktop)]',
+        'py-[var(--section-py-mobile)] md:py-[var(--section-py-md)] lg:py-[var(--section-py-desktop)]',
         backgrounds[background],
         className,
       )}
