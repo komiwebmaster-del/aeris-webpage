@@ -248,5 +248,15 @@
     "telValue": "TBD", "salesValue": "TBD", "bizNumberValue": "TBD",
     "legal": { "privacy": "Privacy Policy", "terms": "Terms of Service" },
     "copyright": "© {year} AERIS (Korijob), All rights reserved."
+  },
+  "seo": {
+    "title": "AERIS — Air, Engineered.",
+    "titleBrand": "AERIS",
+    "description": "AERIS is an HVAC brand that integrates ventilation, dehumidification, purification, and sterilization into a single system to engineer and operate the indoor air environment.",
+    "ogTitle": "AERIS — Engineering the Air",
+    "ogDescription": "Ventilation, dehumidification, purification, and sterilization in one system. Indoor air environments, engineered.",
+    "ogTagline": "Ventilation, dehumidification, purification, and sterilization — engineered as one indoor-air system.",
+    "ogBadge": "AERIS by Korijob",
+    "keywords": "AERIS, Korijob, HVAC, ventilation, heat recovery ventilator, dehumidifier, built-in dehumidifier, air purification, air sterilization, integrated HVAC, indoor air quality, IAQ"
   }
 }
