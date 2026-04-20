@@ -1,12 +1,12 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
-import { ArrowRight } from 'lucide-react';
-import { Section } from '@/components/layout/section';
 import { Container } from '@/components/layout/container';
-import { Eyebrow } from '@/components/ui/eyebrow';
+import { Section } from '@/components/layout/section';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import { Eyebrow } from '@/components/ui/eyebrow';
+import { ArrowRight } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 export function HeroSection() {
   const t = useTranslations('hero');
@@ -74,16 +74,16 @@ export function HeroSection() {
           </div>
 
           {/* Image — Right */}
-          <div className="lg:flex-1">
+          {/* <div className="lg:flex-1">
             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg bg-navy-800 lg:aspect-square">
-              {/* Placeholder until hero image asset received */}
+              Placeholder until hero image asset received
               <div className="flex h-full w-full items-center justify-center">
                 <p className="text-caption font-medium uppercase tracking-wider text-blue-300">
                   Hero Image — 에셋 수령 예정
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </Container>
     </Section>
