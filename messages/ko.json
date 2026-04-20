@@ -89,55 +89,103 @@
   "solutions": {
     "eyebrow": "SOLUTIONS",
     "headline": "공간에 맞는\nAERIS 솔루션",
-    "tabs": {
-      "shat": "통합 공조(SHAT)",
-      "drdh": "빌트인 제습(DRDH)",
-      "radm": "창문형/모듈(RADM)",
-      "arms": "인증·근거(ARMS)"
+    "groupLabels": {
+      "features": "기능",
+      "characteristics": "특징"
     },
-    "shat": {
-      "title": "통합 공조 시스템",
-      "description": "환기·제습·정화·살균 4대 공기환경 통합 제어 시스템",
-      "specs": [
-        "환기율 향상 85% 이상 → 에너지 손실 최소화",
-        "PM2.5 센서 내장 → 실시간 공기질 측정·자동 제어",
-        "BMS·앱 연동 → 원격 모니터링 및 스케줄 운영",
-        "18 dB 정숙 운영 → 수면·집중 방해 없음"
-      ],
-      "cta": "통합공조 상담 신청"
+    "tabs": {
+      "drdh": "천정형 빌트인 제습기 (DRDH)",
+      "shat": "환기 겸용 제습장치 (SHAT)",
+      "radm": "창문형 제습장 (RADM)",
+      "arms": "복합 환기장치 (ARMS)"
     },
     "drdh": {
-      "title": "빌트인 제습",
-      "description": "공간 맞춤형 빌트인 제습 솔루션으로 최적의 습도 환경을 유지합니다.",
-      "specs": [
-        "공간 맞춤 설계로 최적 제습 효율 구현",
-        "에너지 효율 극대화 인버터 방식",
-        "전열 교환으로 실내 쾌적함 유지",
-        "자동 제어 및 스케줄 운영 가능"
+      "title": "천정형 빌트인 제습기 (DRDH)",
+      "description": "환기·제습·정화 기능을 하나로 통합해 <em>보이지 않는 공기환경</em>까지 안정적으로 유지합니다.",
+      "features": ["실내 제제습", "공기 살균", "공기 청정"],
+      "characteristics": [
+        "저전력",
+        "저소음",
+        "천정빌트인 설치",
+        "자동배수",
+        "실내습도 설정",
+        "집중제습 (실내 특정공간 제습)"
       ],
-      "cta": "빌트인 제습 상담 신청"
+      "metrics": [
+        { "label": "제습 능력", "value": "8 L/day" },
+        { "label": "냉방 능력", "value": "315 W" },
+        { "label": "소비전력(최대)", "value": "200 W" }
+      ],
+      "images": [
+        { "src": "/images/placeholder-drdh.svg", "alt": "천정형 빌트인 제습기 전면" },
+        { "src": "/images/placeholder-drdh.svg", "alt": "천정형 빌트인 제습기 상세" }
+      ]
+    },
+    "shat": {
+      "title": "환기 겸용 제습장치 (SHAT)",
+      "description": "환기와 제습을 하나의 장치로 결합해 <em>에너지 손실 없이</em> 쾌적한 실내 공기를 유지합니다.",
+      "features": ["전열 환기", "실내 제습", "공기 청정"],
+      "characteristics": [
+        "전열 교환",
+        "저소음",
+        "벽매립 설치",
+        "자동 제어",
+        "CO₂ 센서",
+        "PM2.5 센서"
+      ],
+      "metrics": [
+        { "label": "제습 능력", "value": "10 L/day" },
+        { "label": "풍량", "value": "150 m³/h" },
+        { "label": "소비전력(최대)", "value": "120 W" }
+      ],
+      "images": [
+        { "src": "/images/placeholder-shat.svg", "alt": "환기 겸용 제습장치 전면" },
+        { "src": "/images/placeholder-shat.svg", "alt": "환기 겸용 제습장치 상세" }
+      ]
     },
     "radm": {
-      "title": "창문형·모듈",
-      "description": "별도 공사 없이 설치 가능한 모듈형·창문 부착형 솔루션.",
-      "specs": [
-        "공사 없는 간편 설치",
-        "모듈 단위 확장 가능",
-        "창문 기밀 유지 구조",
-        "원격 제어 지원"
+      "title": "창문형 제습장 (RADM)",
+      "description": "공사 없이 설치 가능한 창문형 구조로 <em>필요한 공간</em>에만 정밀하게 제습합니다.",
+      "features": ["실내 제습", "외기 차단", "환기 보조"],
+      "characteristics": [
+        "무공사 설치",
+        "창문 기밀 유지",
+        "저소음",
+        "자동배수",
+        "원격 제어",
+        "모듈 확장"
       ],
-      "cta": "창문형 모듈 상담 신청"
+      "metrics": [
+        { "label": "제습 능력", "value": "6 L/day" },
+        { "label": "풍량", "value": "80 m³/h" },
+        { "label": "소비전력(최대)", "value": "150 W" }
+      ],
+      "images": [
+        { "src": "/images/placeholder-radm.svg", "alt": "창문형 제습장 전면" },
+        { "src": "/images/placeholder-radm.svg", "alt": "창문형 제습장 상세" }
+      ]
     },
     "arms": {
-      "title": "인증·근거",
-      "description": "데이터와 인증으로 검증된 AERIS 성능의 근거를 확인하세요.",
-      "specs": [
-        "국가 공인 시험 성적서 보유",
-        "환경부·산업부 인증 완료",
-        "현장 적용 데이터 제공",
-        "비교 분석 리포트 제공"
+      "title": "복합 환기장치 (ARMS)",
+      "description": "전열 환기·정화·살균을 하나로 통합해 <em>에너지 효율</em>과 공기질을 동시에 확보합니다.",
+      "features": ["전열 환기", "공기 정화", "공기 살균"],
+      "characteristics": [
+        "전열 교환 효율",
+        "UV 살균",
+        "HEPA 필터",
+        "자동 환기",
+        "BMS 연동",
+        "저소음"
       ],
-      "cta": "인증 자료 요청하기"
+      "metrics": [
+        { "label": "환기율", "value": "85%" },
+        { "label": "풍량", "value": "200 m³/h" },
+        { "label": "소비전력(최대)", "value": "180 W" }
+      ],
+      "images": [
+        { "src": "/images/placeholder-shat.svg", "alt": "복합 환기장치 전면" },
+        { "src": "/images/placeholder-shat.svg", "alt": "복합 환기장치 상세" }
+      ]
     }
   },
   "useCases": {

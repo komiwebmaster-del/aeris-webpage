@@ -89,55 +89,103 @@
   "solutions": {
     "eyebrow": "SOLUTIONS",
     "headline": "AERIS Solutions\nFor Your Space",
-    "tabs": {
-      "shat": "Integrated HVAC (SHAT)",
-      "drdh": "Built-in Dehumidifier (DRDH)",
-      "radm": "Window/Module (RADM)",
-      "arms": "Certification (ARMS)"
+    "groupLabels": {
+      "features": "Features",
+      "characteristics": "Highlights"
     },
-    "shat": {
-      "title": "Integrated HVAC System",
-      "description": "Integrated control for ventilation, dehumidification, purification, and sterilization",
-      "specs": [
-        "85%+ ventilation efficiency → Minimized energy loss",
-        "Built-in PM2.5 sensor → Real-time air quality & auto control",
-        "BMS & app integration → Remote monitoring and scheduling",
-        "18 dB quiet operation → No sleep or focus disturbance"
-      ],
-      "cta": "Consult on SHAT"
+    "tabs": {
+      "drdh": "Ceiling Built-in Dehumidifier (DRDH)",
+      "shat": "Ventilation & Dehumidification (SHAT)",
+      "radm": "Window-mounted Dehumidifier (RADM)",
+      "arms": "Multi-function Ventilator (ARMS)"
     },
     "drdh": {
-      "title": "Built-in Dehumidifier",
-      "description": "Custom built-in dehumidification for optimal indoor humidity.",
-      "specs": [
-        "Space-optimized design for maximum dehumidification",
-        "Energy-efficient inverter technology",
-        "Heat exchange maintains indoor comfort",
-        "Auto control and scheduling supported"
+      "title": "Ceiling Built-in Dehumidifier (DRDH)",
+      "description": "Ventilation, dehumidification, and purification in one unit — stable control of <em>the air you never see</em>.",
+      "features": ["Indoor dehumidification", "Air sterilization", "Air purification"],
+      "characteristics": [
+        "Low power",
+        "Quiet operation",
+        "Ceiling built-in install",
+        "Auto drainage",
+        "Custom humidity setting",
+        "Focused dehumidification"
       ],
-      "cta": "Consult on DRDH"
+      "metrics": [
+        { "label": "Dehumidification", "value": "8 L/day" },
+        { "label": "Cooling capacity", "value": "315 W" },
+        { "label": "Max power", "value": "200 W" }
+      ],
+      "images": [
+        { "src": "/images/placeholder-drdh.svg", "alt": "Ceiling built-in dehumidifier — front" },
+        { "src": "/images/placeholder-drdh.svg", "alt": "Ceiling built-in dehumidifier — detail" }
+      ]
+    },
+    "shat": {
+      "title": "Ventilation & Dehumidification (SHAT)",
+      "description": "A single unit that combines ventilation and dehumidification — comfort <em>without energy loss</em>.",
+      "features": ["Heat-recovery ventilation", "Indoor dehumidification", "Air purification"],
+      "characteristics": [
+        "Heat exchange",
+        "Quiet operation",
+        "Wall-mounted install",
+        "Auto control",
+        "CO₂ sensor",
+        "PM2.5 sensor"
+      ],
+      "metrics": [
+        { "label": "Dehumidification", "value": "10 L/day" },
+        { "label": "Airflow", "value": "150 m³/h" },
+        { "label": "Max power", "value": "120 W" }
+      ],
+      "images": [
+        { "src": "/images/placeholder-shat.svg", "alt": "Ventilation & dehumidification unit — front" },
+        { "src": "/images/placeholder-shat.svg", "alt": "Ventilation & dehumidification unit — detail" }
+      ]
     },
     "radm": {
-      "title": "Window/Module Unit",
-      "description": "Modular and window-mounted solutions — no construction required.",
-      "specs": [
-        "Tool-free installation",
-        "Modular expandability",
-        "Window airtight structure",
-        "Remote control supported"
+      "title": "Window-mounted Dehumidifier (RADM)",
+      "description": "A no-construction window unit that dehumidifies <em>only where it's needed</em>.",
+      "features": ["Indoor dehumidification", "Outdoor air block", "Ventilation support"],
+      "characteristics": [
+        "No-construction install",
+        "Airtight window fit",
+        "Quiet operation",
+        "Auto drainage",
+        "Remote control",
+        "Modular expansion"
       ],
-      "cta": "Consult on RADM"
+      "metrics": [
+        { "label": "Dehumidification", "value": "6 L/day" },
+        { "label": "Airflow", "value": "80 m³/h" },
+        { "label": "Max power", "value": "150 W" }
+      ],
+      "images": [
+        { "src": "/images/placeholder-radm.svg", "alt": "Window-mounted dehumidifier — front" },
+        { "src": "/images/placeholder-radm.svg", "alt": "Window-mounted dehumidifier — detail" }
+      ]
     },
     "arms": {
-      "title": "Certification & Evidence",
-      "description": "Verified performance data and certifications for every AERIS claim.",
-      "specs": [
-        "National accredited test reports",
-        "Government certified (Environment & Industry)",
-        "Field application data available",
-        "Comparative analysis reports provided"
+      "title": "Multi-function Ventilator (ARMS)",
+      "description": "Heat-recovery ventilation, purification, and sterilization in one — <em>energy efficiency</em> and air quality together.",
+      "features": ["Heat-recovery ventilation", "Air purification", "Air sterilization"],
+      "characteristics": [
+        "Heat-exchange efficiency",
+        "UV sterilization",
+        "HEPA filter",
+        "Auto ventilation",
+        "BMS integration",
+        "Quiet operation"
       ],
-      "cta": "Request Certification Data"
+      "metrics": [
+        { "label": "Ventilation rate", "value": "85%" },
+        { "label": "Airflow", "value": "200 m³/h" },
+        { "label": "Max power", "value": "180 W" }
+      ],
+      "images": [
+        { "src": "/images/placeholder-shat.svg", "alt": "Multi-function ventilator — front" },
+        { "src": "/images/placeholder-shat.svg", "alt": "Multi-function ventilator — detail" }
+      ]
     }
   },
   "useCases": {
