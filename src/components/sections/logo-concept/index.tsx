@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Section } from '@/components/layout/section';
 import { Container } from '@/components/layout/container';
+import { FadeUp } from '@/components/ui/fade-up';
 import { WaveBackground } from '@/components/decor/wave-background';
 
 const keyVisualItems = ['wordmark', 'flow', 'color'] as const;
@@ -66,42 +67,46 @@ export function LogoConceptSection() {
     >
       <WaveBackground fullBleed />
       <Container className="relative z-10">
-        <div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-[2fr_3fr] lg:gap-20">
+        <div className="grid grid-cols-1 items-start gap-12 md:grid-cols-[2fr_3fr] md:gap-16 lg:gap-20">
           {/* Left — Logo Artwork */}
-          <div className="lg:sticky lg:top-28">
+          <FadeUp delay={0} className="md:sticky md:top-28">
             <LogoArtwork alt={tc('logoAlt')} />
-          </div>
+          </FadeUp>
 
           {/* Right — Content blocks */}
           <div>
-            <section>
-              <h2 className="text-h3 font-bold uppercase tracking-wider text-navy-900">
-                {t('title')}
-              </h2>
-              <p className="mt-4 whitespace-pre-line text-body leading-relaxed text-gray-700">
-                {t('body')}
-              </p>
-            </section>
+            <FadeUp delay={0.1}>
+              <section>
+                <h2 className="text-h3 font-bold uppercase tracking-wider text-navy-900">
+                  {t('title')}
+                </h2>
+                <p className="mt-4 whitespace-pre-line text-body leading-relaxed text-gray-700">
+                  {t('body')}
+                </p>
+              </section>
+            </FadeUp>
 
-            <section className="mt-12 lg:mt-16">
-              <h2 className="text-h3 font-bold uppercase tracking-wider text-navy-900">
-                {tkv('title')}
-              </h2>
+            <FadeUp delay={0.2} className="mt-12 lg:mt-16">
+              <section>
+                <h2 className="text-h3 font-bold uppercase tracking-wider text-navy-900">
+                  {tkv('title')}
+                </h2>
 
-              <ul className="mt-6 space-y-6 lg:space-y-8">
-                {keyVisualItems.map((id) => (
-                  <li key={id}>
-                    <h3 className="text-body font-bold text-blue-500">
-                      {tkv(`items.${id}.title`)}
-                    </h3>
-                    {id === 'color' && <ColorSwatchBar />}
-                    <p className="mt-2 text-small leading-relaxed text-gray-700">
-                      {tkv(`items.${id}.body`)}
-                    </p>
-                  </li>
-                ))}
-              </ul>
-            </section>
+                <ul className="mt-6 space-y-6 lg:space-y-8">
+                  {keyVisualItems.map((id) => (
+                    <li key={id}>
+                      <h3 className="text-body font-bold text-blue-500">
+                        {tkv(`items.${id}.title`)}
+                      </h3>
+                      {id === 'color' && <ColorSwatchBar />}
+                      <p className="mt-2 text-small leading-relaxed text-gray-700">
+                        {tkv(`items.${id}.body`)}
+                      </p>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            </FadeUp>
           </div>
         </div>
       </Container>

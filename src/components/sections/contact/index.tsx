@@ -7,6 +7,7 @@ import { useTranslations } from 'next-intl';
 import { Section } from '@/components/layout/section';
 import { Container } from '@/components/layout/container';
 import { Eyebrow } from '@/components/ui/eyebrow';
+import { FadeUp } from '@/components/ui/fade-up';
 import { FormField } from '@/components/ui/form-field';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -78,14 +79,14 @@ export function ContactSection() {
     <Section background="gray" id="contact">
       <Container size="narrow">
         {/* Header */}
-        <div className="mb-10 space-y-3">
+        <FadeUp delay={0} className="mb-10 space-y-3">
           <Eyebrow>{t('eyebrow')}</Eyebrow>
           <h2 className="text-h1 font-bold text-navy-900">{t('headline')}</h2>
           <p className="text-body text-gray-700">{t('subtext')}</p>
-        </div>
+        </FadeUp>
 
         {/* Form Card */}
-        <div className="rounded-lg border border-gray-300 bg-white p-6 lg:p-12">
+        <FadeUp delay={0.15} className="rounded-lg border border-gray-300 bg-white p-6 lg:p-12">
           {status === 'success' ? (
             <div className="flex min-h-[200px] items-center justify-center text-center">
               <p className="text-h3 font-medium text-navy-900">{t('success')}</p>
@@ -235,7 +236,7 @@ export function ContactSection() {
               </Button>
             </form>
           )}
-        </div>
+        </FadeUp>
       </Container>
     </Section>
   );

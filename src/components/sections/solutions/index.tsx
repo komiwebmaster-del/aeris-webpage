@@ -6,6 +6,7 @@ import { ArrowRight, Wind, Shield, Droplets, Volume2 } from 'lucide-react';
 import { Section } from '@/components/layout/section';
 import { Container } from '@/components/layout/container';
 import { Eyebrow } from '@/components/ui/eyebrow';
+import { FadeUp } from '@/components/ui/fade-up';
 import { Tab } from '@/components/ui/tab';
 import { Carousel } from '@/components/ui/carousel';
 import { Button } from '@/components/ui/button';
@@ -36,25 +37,27 @@ export function SolutionsSection() {
     <Section background="lightBlue" id="solutions">
       <Container>
         {/* Section Header */}
-        <div className="mb-10 flex flex-col gap-4 lg:mb-12 lg:flex-row lg:items-end lg:justify-between">
+        <FadeUp delay={0} className="mb-10 flex flex-col gap-4 lg:mb-12 lg:flex-row lg:items-end lg:justify-between">
           <div className="space-y-3">
             <Eyebrow>{t('eyebrow')}</Eyebrow>
             <h2 className="whitespace-pre-line text-h1 font-bold text-navy-900">
               {t('headline')}
             </h2>
           </div>
-        </div>
+        </FadeUp>
 
         {/* Tabs */}
-        <Tab
-          tabs={tabs}
-          value={activeTab}
-          onChange={(v) => setActiveTab(v as SolutionId)}
-          className="mb-8 rounded-t-md bg-white/60"
-        />
+        <FadeUp delay={0.1}>
+          <Tab
+            tabs={tabs}
+            value={activeTab}
+            onChange={(v) => setActiveTab(v as SolutionId)}
+            className="mb-8 rounded-t-md bg-white/60"
+          />
+        </FadeUp>
 
         {/* Content panel */}
-        <div className="flex flex-col gap-8 lg:flex-row lg:gap-12">
+        <div className="flex flex-col gap-8 md:flex-row md:gap-8 lg:gap-12">
           {/* Carousel */}
           <div className="lg:flex-1">
             <Carousel images={placeholderImages} />

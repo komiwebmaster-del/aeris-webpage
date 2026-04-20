@@ -5,6 +5,7 @@ import { Section } from '@/components/layout/section';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Eyebrow } from '@/components/ui/eyebrow';
+import { FadeUp } from '@/components/ui/fade-up';
 import { ArrowRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
@@ -23,29 +24,35 @@ export function HeroSection() {
         <div className="flex flex-col gap-10 lg:flex-row lg:items-center lg:gap-16">
           {/* Text — Left */}
           <div className="flex flex-col items-start gap-6 lg:flex-1">
-            <Eyebrow className="text-blue-300 [&>span:last-child]:text-blue-300">
-              {t('eyebrow')}
-            </Eyebrow>
+            <FadeUp delay={0}>
+              <Eyebrow className="text-blue-300 [&>span:last-child]:text-blue-300">
+                {t('eyebrow')}
+              </Eyebrow>
+            </FadeUp>
 
-            <h1 className="whitespace-pre-line text-display font-bold text-white">
-              {t('headline')}
-            </h1>
+            <FadeUp delay={0.1}>
+              <h1 className="whitespace-pre-line text-display font-bold text-white">
+                {t('headline')}
+              </h1>
+            </FadeUp>
 
-            <p className="max-w-md text-body text-gray-300">
-              {t('description')}
-            </p>
+            <FadeUp delay={0.2}>
+              <p className="max-w-md text-body text-gray-300">
+                {t('description')}
+              </p>
+            </FadeUp>
 
             {/* Tags */}
-            <div className="flex flex-wrap gap-2">
+            <FadeUp delay={0.28} className="flex flex-wrap gap-2">
               {tags.map((tag) => (
                 <Badge key={tag} variant="dark">
                   {tag}
                 </Badge>
               ))}
-            </div>
+            </FadeUp>
 
             {/* CTAs */}
-            <div className="flex flex-wrap gap-3">
+            <FadeUp delay={0.36} className="flex flex-wrap gap-3">
               <Button
                 variant="primary"
                 size="lg"
@@ -70,7 +77,7 @@ export function HeroSection() {
               >
                 {t('ctaSecondary')}
               </Button>
-            </div>
+            </FadeUp>
           </div>
 
           {/* Image — Right */}

@@ -2,6 +2,7 @@ import { useTranslations } from 'next-intl';
 import { Section } from '@/components/layout/section';
 import { Container } from '@/components/layout/container';
 import { Eyebrow } from '@/components/ui/eyebrow';
+import { FadeUp } from '@/components/ui/fade-up';
 import { WaveBackground } from '@/components/decor/wave-background';
 
 const cardIds = ['system', 'engineering'] as const;
@@ -13,9 +14,11 @@ export function BrandOverviewSection() {
     <Section background="white" id="brand-overview" className="relative overflow-hidden">
       <WaveBackground fullBleed />
       <Container className="relative z-10">
-        <Eyebrow>{t('eyebrow')}</Eyebrow>
+        <FadeUp delay={0}>
+          <Eyebrow>{t('eyebrow')}</Eyebrow>
+        </FadeUp>
 
-        <div className="mt-12 flex flex-col items-center gap-6 text-center lg:mt-16">
+        <FadeUp delay={0.1} className="mt-12 flex flex-col items-center gap-6 text-center lg:mt-16">
           <h2 className="text-display font-bold leading-tight text-navy-900">
             Air, <span className="text-blue-500">Engineered.</span>
             <br />
@@ -29,14 +32,11 @@ export function BrandOverviewSection() {
               ),
             })}
           </p>
-        </div>
+        </FadeUp>
 
         <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:mt-16 lg:gap-8">
-          {cardIds.map((id) => (
-            <article
-              key={id}
-              className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm lg:p-8"
-            >
+          {cardIds.map((id, idx) => (
+            <FadeUp key={id} delay={0.2 + idx * 0.1} as="article" className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm lg:p-8">
               <h3 className="text-h3 font-bold text-navy-900">
                 {t(`cards.${id}.title`)}
               </h3>
@@ -47,7 +47,7 @@ export function BrandOverviewSection() {
                   ),
                 })}
               </p>
-            </article>
+            </FadeUp>
           ))}
         </div>
       </Container>

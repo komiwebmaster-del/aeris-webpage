@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import { Container } from '@/components/layout/container';
+import { FadeUp } from '@/components/ui/fade-up';
 
 export function FooterSection() {
   const t = useTranslations('footer');
@@ -9,7 +10,7 @@ export function FooterSection() {
   return (
     <footer className="border-t border-gray-300 bg-gray-50 py-8 lg:py-16">
       <Container>
-        <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
+        <FadeUp delay={0} className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
           {/* Left — Brand & Contact */}
           <div className="space-y-4">
             <Link href="/" aria-label={t('brandLine')}>
@@ -41,7 +42,7 @@ export function FooterSection() {
           </div>
 
           {/* Right — Legal Links */}
-          <div className="flex gap-6 text-small text-gray-500 lg:flex-col lg:items-end lg:gap-2">
+          <div className="flex gap-6 text-small text-gray-500 md:flex-col md:items-end md:gap-2">
             <Link
               href="/legal/privacy"
               className="transition-colors hover:text-navy-900"
@@ -55,7 +56,7 @@ export function FooterSection() {
               {t('legal.terms')}
             </Link>
           </div>
-        </div>
+        </FadeUp>
 
         {/* Copyright */}
         <div className="mt-8 border-t border-gray-200 pt-6">

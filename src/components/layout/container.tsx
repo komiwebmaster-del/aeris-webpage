@@ -14,7 +14,7 @@ export function Container({
   return (
     <div
       className={cn(
-        'mx-auto w-full px-[var(--container-pad-mobile)] lg:px-[var(--container-pad-desktop)]',
+        'mx-auto w-full px-[var(--container-pad-mobile)] md:px-10 lg:px-[var(--container-pad-desktop)]',
         size === 'default' ? 'max-w-container' : 'max-w-[800px]',
         className,
       )}

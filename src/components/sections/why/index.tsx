@@ -3,6 +3,7 @@ import { Section } from '@/components/layout/section';
 import { Container } from '@/components/layout/container';
 import { Eyebrow } from '@/components/ui/eyebrow';
 import { Badge } from '@/components/ui/badge';
+import { FadeUp } from '@/components/ui/fade-up';
 
 const cardIds = ['mold', 'humidity', 'common', 'odor'] as const;
 
@@ -30,7 +31,7 @@ export function WhySection() {
   return (
     <Section background="white" id="why">
       <Container>
-        <div className="mb-12 flex flex-col gap-4 lg:mb-16 lg:flex-row lg:items-end lg:justify-between">
+        <FadeUp delay={0} className="mb-12 flex flex-col gap-4 lg:mb-16 lg:flex-row lg:items-end lg:justify-between">
           <div className="space-y-4">
             <Eyebrow>{t('eyebrow')}</Eyebrow>
             <h2 className="text-display font-bold leading-tight text-navy-900">
@@ -44,28 +45,30 @@ export function WhySection() {
           <p className="max-w-sm whitespace-pre-line text-body leading-relaxed text-gray-700 lg:text-right">
             {t('description')}
           </p>
-        </div>
+        </FadeUp>
 
         <div className="grid grid-cols-2 gap-6 lg:grid-cols-4 lg:gap-8">
-          {cardIds.map((id) => (
-            <div key={id} className="group flex flex-col gap-4">
-              <div
-                role="img"
-                aria-label={`${t(`cards.${id}.title`)} 관련 이미지 (에셋 수령 예정)`}
-                className="flex aspect-square items-center justify-center rounded-md border border-gray-300 bg-white"
-              >
-                <span className="text-small text-gray-500">Image 혹은 일러스트</span>
-              </div>
+          {cardIds.map((id, idx) => (
+            <FadeUp key={id} delay={0.1 + idx * 0.08}>
+              <div className="group flex flex-col gap-4">
+                <div
+                  role="img"
+                  aria-label={`${t(`cards.${id}.title`)} 관련 이미지 (에셋 수령 예정)`}
+                  className="flex aspect-square items-center justify-center rounded-md border border-gray-300 bg-white"
+                >
+                  <span className="text-small text-gray-500">Image 혹은 일러스트</span>
+                </div>
 
-              <div className="flex flex-col items-center gap-2 text-center">
-                <p className="text-body font-bold text-navy-900">
-                  {t(`cards.${id}.title`)}
-                </p>
-                <Badge variant="solid" size="sm">
-                  {t(`cards.${id}.tag`)}
-                </Badge>
+                <div className="flex flex-col items-center gap-2 text-center">
+                  <p className="text-body font-bold text-navy-900">
+                    {t(`cards.${id}.title`)}
+                  </p>
+                  <Badge variant="solid" size="sm">
+                    {t(`cards.${id}.tag`)}
+                  </Badge>
+                </div>
               </div>
-            </div>
+            </FadeUp>
           ))}
         </div>
       </Container>
