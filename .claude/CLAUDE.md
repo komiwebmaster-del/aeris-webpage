@@ -134,7 +134,9 @@ docs/01-brand-identity.md, docs/03-design-system.md 를 먼저 읽고,
 - [ ] Spacing scale·Border radius·Shadow 정확값
 - [ ] 4개 문제 카드의 일러스트/아이콘 에셋
 - [ ] Hero 키 비주얼 에셋
-- [ ] 솔루션 캐러셀 이미지 (3컷)
+- [ ] 솔루션 실물 제품 이미지 **4종 × 2컷 = 8컷** (DRDH 전면/상세, SHAT 전면/상세, RADM 전면/상세, ARMS 전면/상세)
+- [ ] SHAT / RADM / ARMS 의 기능·특징·메트릭 수치 확정 (현재 messages/*.json 은 잠정 플레이스홀더)
+- [ ] Solutions 섹션 배경 톤이 `--color-blue-100` (#DCE9F4) 과 완전 동일한지 디자이너 확인
 - [ ] 적용 사례 이미지 (발코니/욕실/드레스룸/창문형)
 - [ ] 로고 SVG (컬러/모노)
 
@@ -146,3 +148,4 @@ docs/01-brand-identity.md, docs/03-design-system.md 를 먼저 읽고,
 |---|---|
 | 2026-04-16 | 초기 셋업 |
 | 2026-04-16 | 시안 수령 → 기술 스택 확정 / 솔루션 라인업 추가 / 회사명(코리잡) 반영 |
+| 2026-04-20 | Solutions 섹션 시안 정합 재구성 — 탭 순서·라벨 갱신, 기능·특징·메트릭 스키마 도입 |
