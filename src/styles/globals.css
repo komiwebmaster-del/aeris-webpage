@@ -188,3 +188,21 @@
     transform: scale(1.15);
   }
 }
+
+@keyframes swatch-float {
+  0%, 100% { transform: rotateX(14deg) rotateY(-4deg) translateY(0); }
+  50%      { transform: rotateX(10deg) rotateY(4deg)  translateY(-4px); }
+}
+
+@utility animate-swatch-float {
+  animation: swatch-float 6s ease-in-out infinite;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-swatch-float {
+    animation: none;
+    transform: rotateX(14deg);
+  }
+}

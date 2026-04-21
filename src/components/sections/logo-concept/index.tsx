@@ -8,9 +8,9 @@ import { Wavy } from '@/components/decor/wavy';
 const keyVisualItems = ['wordmark', 'flow', 'color'] as const;
 
 const palette = [
-  { hex: '#002D56' },
-  { hex: '#154974' },
-  { hex: '#4B8CBC' },
+  { hex: '#002D56', shadow: '#001a33' },
+  { hex: '#154974', shadow: '#0a2b46' },
+  { hex: '#4B8CBC', shadow: '#2e6791' },
 ] as const;
 
 function LogoArtwork({ alt }: { alt: string }) {
@@ -39,18 +39,32 @@ function LogoArtwork({ alt }: { alt: string }) {
 
 function ColorSwatchBar() {
   return (
-    <div className="mt-3 flex overflow-hidden rounded-md">
-      {palette.map(({ hex }) => (
-        <div
-          key={hex}
-          style={{ backgroundColor: hex }}
-          className="flex h-10 flex-1 items-center justify-center"
-        >
-          <span className="text-small font-medium tracking-wider text-white">
-            {hex}
-          </span>
-        </div>
-      ))}
+    <div className="group mb-8 mt-4 [perspective:900px]">
+      <div
+        className="flex animate-swatch-float transition-transform duration-700 ease-out group-hover:[animation-play-state:paused] group-hover:[transform:rotateX(6deg)_rotateY(-10deg)_translateY(-6px)]"
+        style={{ transformOrigin: 'center center' }}
+      >
+        {palette.map(({ hex, shadow }, i) => {
+          const extrusion = Array.from({ length: 8 }, (_, d) => `0 ${d + 1}px 0 ${shadow}`).join(', ');
+          return (
+            <div
+              key={hex}
+              style={{
+                backgroundColor: hex,
+                boxShadow: `inset 0 2px 0 rgba(255, 255, 255, 0.18), ${extrusion}, 0 14px 20px -4px rgba(0, 20, 40, 0.3)`,
+                transitionDelay: `${i * 60}ms`,
+              }}
+              className={`flex h-12 flex-1 items-center justify-center transition-transform duration-500 ease-out group-hover:-translate-y-1 ${
+                i === 0 ? 'rounded-l-md' : ''
+              } ${i === palette.length - 1 ? 'rounded-r-md' : ''}`}
+            >
+              <span className="text-small font-medium tracking-wider text-white">
+                {hex}
+              </span>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
