@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl';
 import { Section } from '@/components/layout/section';
 import { Container } from '@/components/layout/container';
 import { FadeUp } from '@/components/ui/fade-up';
-import { WaveBackground } from '@/components/decor/wave-background';
+import { Wavy } from '@/components/decor/wavy';
 
 const keyVisualItems = ['wordmark', 'flow', 'color'] as const;
 
@@ -66,7 +66,7 @@ export function LogoConceptSection() {
       id="logo-concept"
       className="relative overflow-hidden"
     >
-      <WaveBackground fullBleed />
+      <Wavy fullBleed />
       <Container className="relative z-10">
         <div className="grid grid-cols-1 items-start gap-10 md:grid-cols-[2fr_3fr] md:gap-14 lg:gap-20">
           {/* Left — Logo Artwork */}

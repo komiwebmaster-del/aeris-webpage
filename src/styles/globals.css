@@ -169,3 +169,22 @@
     display: none;
   }
 }
+
+@keyframes wavy-drift {
+  0%   { transform: translate3d(-8%, 0, 0) scale(1.15); }
+  50%  { transform: translate3d(8%, 0, 0) scale(1.15); }
+  100% { transform: translate3d(-8%, 0, 0) scale(1.15); }
+}
+
+@utility animate-wavy-drift {
+  animation: wavy-drift 24s ease-in-out infinite;
+  transform-origin: center;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-wavy-drift {
+    animation: none;
+    transform: scale(1.15);
+  }
+}

@@ -3,7 +3,7 @@ import { Section } from '@/components/layout/section';
 import { Container } from '@/components/layout/container';
 import { Eyebrow } from '@/components/ui/eyebrow';
 import { FadeUp } from '@/components/ui/fade-up';
-import { WaveBackground } from '@/components/decor/wave-background';
+import { Wavy } from '@/components/decor/wavy';
 
 const cardIds = ['system', 'engineering'] as const;
 
@@ -12,7 +12,7 @@ export function BrandOverviewSection() {
 
   return (
     <Section background="white" id="brand-overview" className="relative overflow-hidden">
-      <WaveBackground fullBleed />
+      <Wavy fullBleed />
       <Container className="relative z-10">
         <FadeUp delay={0}>
           <Eyebrow>{t('eyebrow')}</Eyebrow>
