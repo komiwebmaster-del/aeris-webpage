@@ -71,12 +71,12 @@ export function SolutionsSection() {
                 })}
               </p>
 
-              <div className="mt-8 flex flex-col gap-6 md:flex-row md:gap-8 lg:gap-10">
-                <div className="md:w-40 md:shrink-0 lg:w-48">
-                  <div className="mb-2 text-body font-bold text-navy-900">
+              <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-[minmax(0,1fr)_minmax(0,2fr)] md:mt-8 md:gap-4">
+                <div className="rounded-lg bg-blue-50 p-5 md:p-6">
+                  <div className="mb-3 text-body font-bold text-blue-600">
                     {t('groupLabels.features')}
                   </div>
-                  <ul className="space-y-1 text-small text-gray-700">
+                  <ul className="space-y-2 text-small text-gray-700">
                     {features.map((item) => (
                       <li key={item} className="flex gap-1.5">
                         <span aria-hidden="true">•</span>
@@ -86,11 +86,11 @@ export function SolutionsSection() {
                   </ul>
                 </div>
 
-                <div className="min-w-0 flex-1">
-                  <div className="mb-2 text-body font-bold text-navy-900">
+                <div className="rounded-lg bg-blue-50 p-5 md:p-6">
+                  <div className="mb-3 text-body font-bold text-blue-600">
                     {t('groupLabels.characteristics')}
                   </div>
-                  <ul className="grid grid-cols-1 gap-x-6 gap-y-1 text-small text-gray-700 sm:grid-cols-2">
+                  <ul className="space-y-2 text-small text-gray-700">
                     {characteristics.map((item) => (
                       <li key={item} className="flex gap-1.5">
                         <span aria-hidden="true">•</span>
@@ -101,14 +101,14 @@ export function SolutionsSection() {
                 </div>
               </div>
 
-              <div className="mt-8 flex flex-wrap gap-2">
+              <div className="mt-6 flex flex-wrap gap-2 md:mt-8 md:justify-end">
                 {metrics.map((m) => (
                   <span
                     key={m.label}
-                    className="inline-flex max-w-full items-center gap-1.5 whitespace-nowrap rounded-pill border border-gray-200 bg-white px-4 py-1.5 text-small text-gray-700"
+                    className="inline-flex max-w-full items-center gap-1.5 whitespace-nowrap rounded-pill bg-blue-50 px-4 py-1.5 text-small text-gray-700"
                   >
                     {m.label}
-                    <strong className="font-bold text-blue-500">{m.value}</strong>
+                    <strong className="font-bold text-blue-600">{m.value}</strong>
                   </span>
                 ))}
               </div>
