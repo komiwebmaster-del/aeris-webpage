@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { Container } from '@/components/layout/container';
 import { Section } from '@/components/layout/section';
 import { Badge } from '@/components/ui/badge';
@@ -22,9 +23,21 @@ export function HeroSection() {
     <Section
       background="navy"
       id="hero"
-      className="pt-[calc(var(--header-h)+var(--section-py-mobile))] md:pt-[calc(var(--header-h)+var(--section-py-md))] lg:pt-[calc(var(--header-h)+var(--section-py-desktop))]"
+      className="relative overflow-hidden pt-[calc(var(--header-h)+var(--section-py-mobile))] md:pt-[calc(var(--header-h)+var(--section-py-md))] lg:pt-[calc(var(--header-h)+var(--section-py-desktop))]"
     >
-      <Container>
+      <Image
+        src="/images/visual/visual-bg.png"
+        alt=""
+        fill
+        priority
+        sizes="100vw"
+        className="pointer-events-none absolute inset-0 select-none object-cover opacity-20 mix-blend-screen"
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 bg-linear-to-b from-navy-950/40 via-transparent to-navy-950/80"
+      />
+      <Container className="relative">
         <div className="flex flex-col gap-10 lg:flex-row lg:items-center lg:gap-16">
           {/* Text — Left */}
           <div className="flex flex-col items-start gap-6 lg:flex-1">
