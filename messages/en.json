@@ -240,11 +240,14 @@
     "error": "Something went wrong. Please try again later."
   },
   "footer": {
-    "brandLine": "AERIS by Korijob",
-    "labels": { "tel": "Phone", "sales": "Sales", "bizNumber": "Business Reg. No." },
-    "telValue": "TBD", "salesValue": "TBD", "bizNumberValue": "TBD",
+    "brandLine": "AERIS, a brand by Korijob International Co., Ltd.",
+    "companyName": "Korijob Inc.",
+    "labels": { "address": "HQ:", "tel": "T.", "email": "E." },
+    "addressValue": "TBD",
+    "telValue": "TBD",
+    "emailValue": "TBD",
     "legal": { "privacy": "Privacy Policy", "terms": "Terms of Service" },
-    "copyright": "© {year} AERIS (Korijob), All rights reserved."
+    "copyright": "© {year} Korijob. All rights reserved."
   },
   "seo": {
     "title": "AERIS — Air, Engineered.",

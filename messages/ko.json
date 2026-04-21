@@ -288,20 +288,21 @@
     "error": "전송 중 문제가 발생했습니다. 잠시 후 다시 시도해주세요."
   },
   "footer": {
-    "brandLine": "AERIS by 코리잡",
+    "brandLine": "AERIS, a brand by Korijob International Co., Ltd.",
+    "companyName": "(주)코리잡",
     "labels": {
-      "tel": "대표전화",
-      "sales": "영업문의",
-      "bizNumber": "사업자등록번호"
+      "address": "본사:",
+      "tel": "T.",
+      "email": "E."
     },
+    "addressValue": "TBD",
     "telValue": "TBD",
-    "salesValue": "TBD",
-    "bizNumberValue": "TBD",
+    "emailValue": "TBD",
     "legal": {
       "privacy": "개인정보처리방침",
       "terms": "이용약관"
     },
-    "copyright": "© {year} AERIS (코리잡), All rights reserved."
+    "copyright": "© {year} Korijob. All rights reserved."
   },
   "seo": {
     "title": "AERIS — Air, Engineered.",
