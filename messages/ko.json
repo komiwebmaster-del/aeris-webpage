@@ -42,7 +42,8 @@
       "quiet":      { "ko": "조용한 운전", "en": "Quiet" },
       "reliable":   { "ko": "신뢰 가능한 성능", "en": "Reliable" },
       "premium":    { "ko": "공간의 품격", "en": "Premium" }
-    }
+    },
+    "visualAlt": "AERIS 통합 공기환경 솔루션이 설치된 실내 아이소메트릭 일러스트"
   },
   "brandConcept": {
     "eyebrow": "ABOUT AERIS - Brand Concept",

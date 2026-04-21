@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Section } from '@/components/layout/section';
 import { Container } from '@/components/layout/container';
@@ -45,13 +46,14 @@ export function BrandCoreSection() {
           </h2>
         </FadeUp>
 
-        {/* 중앙 비주얼 placeholder — 에셋 수령 예정 */}
         <FadeUp delay={0.18} className="relative mx-auto mt-10 aspect-[16/9] w-full max-w-3xl md:mt-12">
-          <div className="flex h-full w-full items-center justify-center rounded-lg bg-blue-50">
-            <p className="text-caption font-medium uppercase tracking-wider text-blue-500">
-              3D Isometric Visual — 에셋 수령 예정
-            </p>
-          </div>
+          <Image
+            src="/images/3d-house.png"
+            alt={t('visualAlt')}
+            fill
+            sizes="(min-width: 1024px) 768px, (min-width: 768px) 80vw, 100vw"
+            className="object-contain"
+          />
         </FadeUp>
 
         {/* 5-포인트 가치 */}

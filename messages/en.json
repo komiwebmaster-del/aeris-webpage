@@ -42,7 +42,8 @@
       "quiet":      { "ko": "Quiet Operation", "en": "Quiet" },
       "reliable":   { "ko": "Reliable Performance", "en": "Reliable" },
       "premium":    { "ko": "Premium Space", "en": "Premium" }
-    }
+    },
+    "visualAlt": "Isometric illustration of an interior with AERIS integrated indoor-air solutions"
   },
   "brandConcept": {
     "eyebrow": "ABOUT AERIS - Brand Concept",

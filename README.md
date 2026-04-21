@@ -32,7 +32,7 @@ pnpm tsc --noEmit
 | 1 | Header | `src/components/sections/header/` | white | ✅ 실 로고(`aeris-logo-navy.png`) 적용 |
 | 2 | Hero (=Visual) | `src/components/sections/hero/` | navy | ⚠️ 우측 이미지 영역 JSX 주석 처리 상태(텍스트만 노출) — 에셋 수령 후 복구 |
 | 3 | Brand Overview | `src/components/sections/brand-overview/` | white | ✅ 2-카드 레이아웃, 웨이브 배경 |
-| 4 | Brand Core | `src/components/sections/brand-core/` | white | ⚠️ 중앙 비주얼 placeholder (3D Isometric) 대기 |
+| 4 | Brand Core | `src/components/sections/brand-core/` | white | ✅ 3D Isometric 비주얼(`3d-house.png`) 반영 |
 | 5 | Brand Concept | `src/components/sections/brand-concept/` | navy | ✅ AERIS 아크로님 5행 + 화이트 로고 |
 | 6 | Logo Concept | `src/components/sections/logo-concept/` | white | ✅ 블루프린트 그리드 + 네이비 로고, Color System 스와치 |
 | 7 | Why AERIS? | `src/components/sections/why/` | white | ⚠️ 4카드 placeholder (`Image 혹은 일러스트`) — 드레스룸 중심 카피 |
@@ -54,7 +54,6 @@ pnpm tsc --noEmit
 | 위치 | 현재 상태 | 받아야 할 것 | 비고 |
 |---|---|---|---|
 | `hero/index.tsx` 우측 영역 | JSX 주석(블록 77–86) | Hero Key Visual 이미지 | 4:3 / lg: 정사각, navy 섹션에 얹힘 |
-| `brand-core/index.tsx:43–48` | blue-50 박스 + 텍스트 "3D Isometric Visual — 에셋 수령 예정" | 3D 아이소메트릭 실내 일러스트 (웨이브 관통) | `aspect-[16/9] max-w-3xl` |
 | `why/index.tsx:50–58` | 회색 보더 박스 × 4 + "Image 혹은 일러스트" | 카드별 이미지/일러스트 4장 | `aspect-square`, 카드 타이틀 순서 `mold→humidity→common→odor` |
 | `decor/wave-background.tsx` | AI 생성 PNG(2048×3072, `public/images/decor/wave-bg.png`) | **진짜 벡터 SVG 웨이브** (로고 모티프와 동일 DNA) | 임시 방편. `<svg>` 인라인 교체 예정 |
 | 로고 | 워드마크 2종 PNG (`public/images/logo/aeris-logo-{navy,white}.png`) 수령 완료 | SVG 버전 + 심볼 단독 + 파비콘 세트 + OG | 상세는 아래 "로고 에셋 요청 규격" |
