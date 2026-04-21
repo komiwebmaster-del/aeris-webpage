@@ -4,25 +4,14 @@ import { Container } from '@/components/layout/container';
 import { Eyebrow } from '@/components/ui/eyebrow';
 import { Badge } from '@/components/ui/badge';
 import { FadeUp } from '@/components/ui/fade-up';
+import { XeaLabFrame, type XeaLabFrameVariant } from '@/components/icons/xea-lab-frame';
 
-const cardIds = ['mold', 'humidity', 'common', 'odor'] as const;
-
-function HeadlineLine({ line }: { line: string }) {
-  if (!line.includes('AERIS')) return <>{line}</>;
-  const parts = line.split('AERIS');
-  return (
-    <>
-      {parts.map((chunk, i) => (
-        <span key={i}>
-          {chunk}
-          {i < parts.length - 1 && (
-            <span className="text-blue-500">AERIS</span>
-          )}
-        </span>
-      ))}
-    </>
-  );
-}
+const cards: { id: 'mold' | 'humidity' | 'common' | 'odor'; variant: XeaLabFrameVariant }[] = [
+  { id: 'mold', variant: 'frame' },
+  { id: 'humidity', variant: 'frame-1' },
+  { id: 'common', variant: 'frame-2' },
+  { id: 'odor', variant: 'frame-3' },
+];
 
 export function WhySection() {
   const t = useTranslations('why');
@@ -31,32 +20,33 @@ export function WhySection() {
   return (
     <Section background="white" id="why">
       <Container>
-        <FadeUp delay={0} className="mb-12 flex flex-col gap-4 md:mb-14 md:items-start lg:mb-16 lg:flex-row lg:items-end lg:justify-between">
-          <div className="space-y-4">
-            <Eyebrow>{t('eyebrow')}</Eyebrow>
-            <h2 className="break-keep text-display font-bold leading-tight text-navy-900 max-w-[min(100%,720px)]">
-              {headlineLines.map((line, idx) => (
-                <span key={idx} className="block">
-                  <HeadlineLine line={line} />
-                </span>
-              ))}
-            </h2>
-          </div>
-          <p className="break-keep max-w-sm whitespace-pre-line text-body leading-relaxed text-gray-700 lg:text-right">
+        <FadeUp delay={0} className="mb-12 flex flex-col md:mb-14 lg:mb-16">
+          <Eyebrow>{t('eyebrow')}</Eyebrow>
+          <p className="mt-10 text-small font-medium text-gray-500">
+            {t('subtitle')}
+          </p>
+          <h2 className="mt-3 max-w-[min(100%,720px)] break-keep text-display font-bold leading-tight text-navy-900">
+            {headlineLines.map((line, idx) => (
+              <span key={idx} className="block">
+                {line}
+              </span>
+            ))}
+          </h2>
+          <p className="mt-6 max-w-3xl whitespace-pre-line break-keep text-body leading-relaxed text-gray-700">
             {t('description')}
           </p>
         </FadeUp>
 
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4 lg:gap-8">
-          {cardIds.map((id, idx) => (
+          {cards.map(({ id, variant }, idx) => (
             <FadeUp key={id} delay={0.1 + idx * 0.08}>
-              <div className="group flex flex-col gap-4">
+              <div className="group flex flex-col items-center gap-5">
                 <div
                   role="img"
-                  aria-label={`${t(`cards.${id}.title`)} 관련 이미지 (에셋 수령 예정)`}
-                  className="flex aspect-square items-center justify-center rounded-md border border-gray-300 bg-white"
+                  aria-label={t(`cards.${id}.title`)}
+                  className="flex aspect-square w-full items-center justify-center rounded-xl border border-blue-100 bg-white transition-colors group-hover:border-blue-200"
                 >
-                  <span className="text-small text-gray-500">Image 혹은 일러스트</span>
+                  <XeaLabFrame variant={variant} alt="" className="h-[55%] w-auto" />
                 </div>
 
                 <div className="flex flex-col items-center gap-2 text-center">

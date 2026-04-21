@@ -77,13 +77,14 @@
   },
   "why": {
     "eyebrow": "WHY AERIS?",
-    "headline": "The storage environment of a dressing room\nmust start with the air.\nAERIS sets that standard with ventilation and dehumidification.",
-    "description": "From mold and odor to humidity imbalance and poor ventilation —\nAERIS manages the air environment required for storage as a system.",
+    "subtitle": "Dressing Room HVAC Specialists — From Design to Maintenance",
+    "headline": "Poor air quality silently\naccumulates invisible damage",
+    "description": "Mold, odor, and humidity imbalance don't appear overnight.\nAERIS sets the air-quality standard at the HVAC design stage and manages it as a system — before problems occur.",
     "cards": {
-      "mold":     { "title": "Mold & Condensation",      "tag": "Humidity Control Required" },
-      "humidity": { "title": "Humidity Imbalance",       "tag": "Ventilation Design Required" },
-      "common":   { "title": "Common Area Management",   "tag": "Dehumidification Required" },
-      "odor":     { "title": "Odor & Poor Ventilation",  "tag": "Individual System Required" }
+      "mold":     { "title": "Mold & Condensation",     "tag": "Climate-Controlled Design" },
+      "humidity": { "title": "Humidity Imbalance",      "tag": "Precision Ventilation Design" },
+      "common":   { "title": "Common-Area Limitations", "tag": "Contamination Barrier Design" },
+      "odor":     { "title": "Odor & Poor Ventilation", "tag": "Supply/Exhaust Balance Design" }
     }
   },
   "solutions": {
