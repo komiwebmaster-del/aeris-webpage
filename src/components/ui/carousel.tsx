@@ -36,13 +36,14 @@ export function Carousel({ images, className }: CarouselProps) {
         <div className="flex">
           {images.map((image, index) => (
             <div key={index} className="min-w-0 flex-[0_0_100%]">
-              <div className="relative aspect-[4/3] bg-gray-100 sm:aspect-[16/10]">
+              <div className="relative aspect-[4/3] bg-white sm:aspect-[16/10]">
                 <Image
                   src={image.src}
                   alt={image.alt}
                   fill
-                  sizes="(min-width: 1024px) 480px, (min-width: 768px) 50vw, 100vw"
-                  className="object-cover"
+                  sizes="(min-width: 1280px) 640px, (min-width: 1024px) 50vw, (min-width: 768px) 50vw, 100vw"
+                  quality={95}
+                  className="object-contain"
                 />
               </div>
             </div>
