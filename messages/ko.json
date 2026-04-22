@@ -1,10 +1,10 @@
 {
   "common": {
-    "logoAlt": "AERIS by 코리잡"
+    "logoAlt": "AERIS by 코미팜"
   },
   "header": {
     "ctaInquiry": "무료 상담 신청",
-    "logoAlt": "AERIS by 코리잡"
+    "logoAlt": "AERIS by 코미팜"
   },
   "hero": {
     "eyebrow": "발코니 · 실내 공기환경 솔루션",
@@ -288,21 +288,21 @@
     "error": "전송 중 문제가 발생했습니다. 잠시 후 다시 시도해주세요."
   },
   "footer": {
-    "brandLine": "AERIS, a brand by Korijob International Co., Ltd.",
-    "companyName": "(주)코리잡",
+    "brandLine": "AERIS, a brand by Komipharm International Co., Ltd.",
+    "companyName": "(주)코미팜",
     "labels": {
       "address": "본사:",
       "tel": "T.",
       "email": "E."
     },
-    "addressValue": "TBD",
-    "telValue": "TBD",
-    "emailValue": "TBD",
+    "addressValue": "경기도 시흥시 경제로 17 (정왕동)",
+    "telValue": "031-498-2121",
+    "emailValue": "webmaster@komipharm.com",
     "legal": {
       "privacy": "개인정보처리방침",
       "terms": "이용약관"
     },
-    "copyright": "© {year} Korijob. All rights reserved."
+    "copyright": "© {year} 코미팜. All rights reserved."
   },
   "seo": {
     "title": "AERIS — Air, Engineered.",
@@ -311,7 +311,7 @@
     "ogTitle": "AERIS — 공기를 설계하다",
     "ogDescription": "환기·제습·정화·살균을 하나의 시스템으로. 발코니부터 시작하는 완전한 실내 공기환경 설계.",
     "ogTagline": "환기·제습·정화·살균을 하나의 시스템으로. 실내 공기환경을 공학적으로 설계하는 HVAC 브랜드.",
-    "ogBadge": "AERIS by 코리잡",
-    "keywords": "AERIS, 에리스, 코리잡, HVAC, 환기 시스템, 전열교환기, 제습, 빌트인 제습기, 공기 정화, 공기 살균, 통합 공조, 실내 공기질, 발코니 환기, 드레스룸 제습, IAQ"
+    "ogBadge": "AERIS by 코미팜",
+    "keywords": "AERIS, 에리스, 코미팜, HVAC, 환기 시스템, 전열교환기, 제습, 빌트인 제습기, 공기 정화, 공기 살균, 통합 공조, 실내 공기질, 발코니 환기, 드레스룸 제습, IAQ"
   }
 }

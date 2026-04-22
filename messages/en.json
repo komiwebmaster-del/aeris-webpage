@@ -1,10 +1,10 @@
 {
   "common": {
-    "logoAlt": "AERIS by Korijob"
+    "logoAlt": "AERIS by Komipharm"
   },
   "header": {
     "ctaInquiry": "Free Consultation",
-    "logoAlt": "AERIS by Korijob"
+    "logoAlt": "AERIS by Komipharm"
   },
   "hero": {
     "eyebrow": "Balcony · Indoor Air Environment Solutions",
@@ -240,14 +240,14 @@
     "error": "Something went wrong. Please try again later."
   },
   "footer": {
-    "brandLine": "AERIS, a brand by Korijob International Co., Ltd.",
-    "companyName": "Korijob Inc.",
+    "brandLine": "AERIS, a brand by Komipharm International Co., Ltd.",
+    "companyName": "Komipharm Inc.",
     "labels": { "address": "HQ:", "tel": "T.", "email": "E." },
-    "addressValue": "TBD",
-    "telValue": "TBD",
-    "emailValue": "TBD",
+    "addressValue": "17 Gyeongje-ro, Siheung-si, Gyeonggi-do, Republic of Korea",
+    "telValue": "+82-31-498-2121",
+    "emailValue": "webmaster@komipharm.com",
     "legal": { "privacy": "Privacy Policy", "terms": "Terms of Service" },
-    "copyright": "© {year} Korijob. All rights reserved."
+    "copyright": "© {year} Komipharm. All rights reserved."
   },
   "seo": {
     "title": "AERIS — Air, Engineered.",
@@ -256,7 +256,7 @@
     "ogTitle": "AERIS — Engineering the Air",
     "ogDescription": "Ventilation, dehumidification, purification, and sterilization in one system. Indoor air environments, engineered.",
     "ogTagline": "Ventilation, dehumidification, purification, and sterilization — engineered as one indoor-air system.",
-    "ogBadge": "AERIS by Korijob",
-    "keywords": "AERIS, Korijob, HVAC, ventilation, heat recovery ventilator, dehumidifier, built-in dehumidifier, air purification, air sterilization, integrated HVAC, indoor air quality, IAQ"
+    "ogBadge": "AERIS by Komipharm",
+    "keywords": "AERIS, Komipharm, HVAC, ventilation, heat recovery ventilator, dehumidifier, built-in dehumidifier, air purification, air sterilization, integrated HVAC, indoor air quality, IAQ"
   }
 }
