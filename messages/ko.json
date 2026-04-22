@@ -163,10 +163,18 @@
         { "label": "소비전력(최대)", "value": "150 W" }
       ],
       "images": [
-        { "src": "/images/product/radm/radm1-1.png", "alt": "창문형 제습장 1 전면" },
-        { "src": "/images/product/radm/radm1-2.png", "alt": "창문형 제습장 1 상세" },
-        { "src": "/images/product/radm/radm2-1.png", "alt": "창문형 제습장 2 전면" },
-        { "src": "/images/product/radm/radm2-2.png", "alt": "창문형 제습장 2 상세" }
+        {
+          "pair": [
+            { "src": "/images/product/radm/radm1-1.png", "alt": "창문형 제습장 1 앞면", "label": "앞면" },
+            { "src": "/images/product/radm/radm1-2.png", "alt": "창문형 제습장 1 뒷면", "label": "뒷면" }
+          ]
+        },
+        {
+          "pair": [
+            { "src": "/images/product/radm/radm2-1.png", "alt": "창문형 제습장 2 앞면", "label": "앞면" },
+            { "src": "/images/product/radm/radm2-2.png", "alt": "창문형 제습장 2 뒷면", "label": "뒷면" }
+          ]
+        }
       ]
     },
     "arms": {

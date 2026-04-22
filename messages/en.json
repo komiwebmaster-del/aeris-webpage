@@ -163,10 +163,18 @@
         { "label": "Max power", "value": "150 W" }
       ],
       "images": [
-        { "src": "/images/product/radm/radm1-1.png", "alt": "Window-mounted dehumidifier unit 1 — front" },
-        { "src": "/images/product/radm/radm1-2.png", "alt": "Window-mounted dehumidifier unit 1 — detail" },
-        { "src": "/images/product/radm/radm2-1.png", "alt": "Window-mounted dehumidifier unit 2 — front" },
-        { "src": "/images/product/radm/radm2-2.png", "alt": "Window-mounted dehumidifier unit 2 — detail" }
+        {
+          "pair": [
+            { "src": "/images/product/radm/radm1-1.png", "alt": "Window-mounted dehumidifier unit 1 — front", "label": "Front" },
+            { "src": "/images/product/radm/radm1-2.png", "alt": "Window-mounted dehumidifier unit 1 — back", "label": "Back" }
+          ]
+        },
+        {
+          "pair": [
+            { "src": "/images/product/radm/radm2-1.png", "alt": "Window-mounted dehumidifier unit 2 — front", "label": "Front" },
+            { "src": "/images/product/radm/radm2-2.png", "alt": "Window-mounted dehumidifier unit 2 — back", "label": "Back" }
+          ]
+        }
       ]
     },
     "arms": {

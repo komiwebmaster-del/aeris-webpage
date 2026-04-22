@@ -7,13 +7,12 @@ import { Container } from '@/components/layout/container';
 import { Eyebrow } from '@/components/ui/eyebrow';
 import { FadeUp } from '@/components/ui/fade-up';
 import { Tab } from '@/components/ui/tab';
-import { Carousel } from '@/components/ui/carousel';
+import { Carousel, type CarouselSlide } from '@/components/ui/carousel';
 
 const solutionIds = ['drdh', 'shat', 'radm', 'arms'] as const;
 type SolutionId = (typeof solutionIds)[number];
 
 type Metric = { label: string; value: string };
-type ProductImage = { src: string; alt: string };
 
 export function SolutionsSection() {
   const t = useTranslations('solutions');
@@ -27,7 +26,7 @@ export function SolutionsSection() {
   const features = t.raw(`${activeTab}.features`) as string[];
   const characteristics = t.raw(`${activeTab}.characteristics`) as string[];
   const metrics = t.raw(`${activeTab}.metrics`) as Metric[];
-  const images = t.raw(`${activeTab}.images`) as ProductImage[];
+  const images = t.raw(`${activeTab}.images`) as CarouselSlide[];
 
   return (
     <Section background="lightBlue" id="solutions">
