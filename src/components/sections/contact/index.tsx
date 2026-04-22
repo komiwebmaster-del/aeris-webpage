@@ -28,15 +28,47 @@ export function ContactSection() {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm<InquiryInput>({
     resolver: zodResolver(inquirySchema),
   });
 
-  const onSubmit = async () => {
+  const onSubmit = async (data: InquiryInput) => {
+    const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
+    if (!accessKey) {
+      setStatus('error');
+      return;
+    }
+
     setStatus('submitting');
-    await new Promise((r) => setTimeout(r, 1000));
-    setStatus('success');
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          access_key: accessKey,
+          subject: `[AERIS 문의] ${data.name} (${data.type.toUpperCase()})`,
+          from_name: 'AERIS 랜딩 페이지',
+          replyto: data.email,
+          botcheck: data.botcheck ?? '',
+          이름: data.name,
+          연락처: data.phone,
+          이메일: data.email,
+          문의유형: data.type === 'b2b' ? 'B2B (프로젝트·설비)' : 'B2C (가정·개인)',
+          문의내용: data.message?.trim() || '-',
+        }),
+      });
+      const json = (await res.json().catch(() => null)) as { success?: boolean } | null;
+      if (!res.ok || !json?.success) throw new Error('submit_failed');
+      reset();
+      setStatus('success');
+    } catch {
+      setStatus('error');
+    }
   };
 
   return (
@@ -61,6 +93,16 @@ export function ContactSection() {
               className="space-y-6"
               noValidate
             >
+              {/* Honeypot — 봇 감지용, 사용자에겐 보이지 않음 */}
+              <input
+                type="text"
+                {...register('botcheck')}
+                tabIndex={-1}
+                autoComplete="off"
+                aria-hidden="true"
+                className="absolute -left-[9999px] h-0 w-0 opacity-0"
+              />
+
               {/* Name */}
               <FormField
                 label={t('fields.name')}

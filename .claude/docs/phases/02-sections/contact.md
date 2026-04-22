@@ -127,3 +127,4 @@ solution 탭에서 prefill 처리:
 - [ ] 모바일에서 키보드 올라올 때 입력 영역 가려지지 않음
 - [ ] 제출 버튼 모바일 full-width
 - [ ] 성공/실패 상태 모킹으로 UI 검증 가능
+- [ ] Web3Forms 실발송 확인 (Phase 4 — access_key 설정 후 수신함 도착 검증)

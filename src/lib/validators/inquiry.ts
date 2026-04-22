@@ -7,6 +7,7 @@ export const inquirySchema = z.object({
   type: z.enum(['b2b', 'b2c'], { message: '문의 유형을 선택해주세요' }),
   message: z.string().max(500, '문의 내용은 500자 이내로 작성해주세요').optional(),
   agreeTerms: z.literal(true, { message: '개인정보 수집에 동의해주세요' }),
+  botcheck: z.string().optional(),
 });
 
 export type InquiryInput = z.infer<typeof inquirySchema>;

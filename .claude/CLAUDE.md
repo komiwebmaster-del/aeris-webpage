@@ -55,7 +55,7 @@ B2B(건설·설비·시설관리) 와 B2C(프리미엄 주거) 를 동시에 타
 | 애니메이션 | CSS transition + 필요 시 framer-motion (절제) |
 | 패키지 매니저 | **pnpm** |
 | 폼 | react-hook-form + zod |
-| 폼 백엔드 | TBD (Resend / Formspree / 자체 API 중 결정) |
+| 폼 백엔드 | **Web3Forms** (클라이언트 전용, 백엔드 서버 없음) |
 | 분석 | TBD (GA4 권장) |
 | 배포 | **Vercel** (권장) |
 
@@ -151,3 +151,4 @@ docs/01-brand-identity.md, docs/03-design-system.md 를 먼저 읽고,
 | 2026-04-20 | Solutions 섹션 시안 정합 재구성 — 탭 순서·라벨 갱신, 기능·특징·메트릭 스키마 도입 |
 | 2026-04-20 | 반응형 정비 — `--header-h`·`--section-py-md` 토큰 도입, `md:` 브레이크포인트 체계 수립, `next/image` `sizes` 전수 지정, 탭 모바일 2x2 그리드, Carousel Embla select 구독 버그 수정. Contact 폼 5필드 축소(spaces/interests 제거) |
 | 2026-04-21 | WHY 섹션 시안 정합 재구성 — 헤더 2단 → 1단 세로 + `subtitle` 키 신설, 카드 플레이스홀더를 `XeaLabFrame` 4종(frame, frame-1~3)으로 교체, 뱃지 문구 '설계 적용' 시리즈로 갱신 |
+| 2026-04-22 | Contact 폼 백엔드 확정 — **Web3Forms** 채택 (백엔드 서버·API Route·SMTP 도입하지 않음). `onSubmit` 실전송 연결 + 허니팟 `botcheck` 필드, `NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY` 도입, `.env.example` 에서 Resend·Upstash 블록 제거, 빈 `src/app/api/` 디렉터리 정리 |
