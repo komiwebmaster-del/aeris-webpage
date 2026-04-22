@@ -65,17 +65,23 @@ export async function generateMetadata({ params }: LocaleParams): Promise<Metada
       alternateLocale: routing.locales
         .filter((l) => l !== typedLocale)
         .map((l) => localeMap[l]),
+      images: [
+        {
+          url: '/opengraph-image.png',
+          width: 1200,
+          height: 630,
+          alt: t('ogTitle'),
+          type: 'image/png',
+        },
+      ],
     },
     twitter: {
       card: 'summary_large_image',
       title: t('ogTitle'),
       description: t('ogDescription'),
+      images: [{ url: '/twitter-image.png', alt: t('ogTitle') }],
     },
     robots,
-    icons: {
-      icon: [{ url: '/favicon.ico' }],
-      shortcut: ['/favicon.ico'],
-    },
     category: 'technology',
     formatDetection: { email: false, telephone: false, address: false },
   };
