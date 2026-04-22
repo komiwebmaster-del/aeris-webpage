@@ -119,8 +119,8 @@
         { "label": "소비전력(최대)", "value": "200 W" }
       ],
       "images": [
-        { "src": "/images/placeholder-drdh.svg", "alt": "천정형 빌트인 제습기 전면" },
-        { "src": "/images/placeholder-drdh.svg", "alt": "천정형 빌트인 제습기 상세" }
+        { "src": "/images/product/drdh/drdh.png", "alt": "천정형 빌트인 제습기 전면" },
+        { "src": "/images/product/drdh/drdh-2.png", "alt": "천정형 빌트인 제습기 상세" }
       ]
     },
     "shat": {
@@ -141,8 +141,8 @@
         { "label": "소비전력(최대)", "value": "120 W" }
       ],
       "images": [
-        { "src": "/images/placeholder-shat.svg", "alt": "환기 겸용 제습장치 전면" },
-        { "src": "/images/placeholder-shat.svg", "alt": "환기 겸용 제습장치 상세" }
+        { "src": "/images/product/shat/shat_1.png", "alt": "환기 겸용 제습장치 전면" },
+        { "src": "/images/product/shat/shat_2.png", "alt": "환기 겸용 제습장치 측면" }
       ]
     },
     "radm": {
@@ -163,8 +163,10 @@
         { "label": "소비전력(최대)", "value": "150 W" }
       ],
       "images": [
-        { "src": "/images/placeholder-radm.svg", "alt": "창문형 제습장 전면" },
-        { "src": "/images/placeholder-radm.svg", "alt": "창문형 제습장 상세" }
+        { "src": "/images/product/radm/radm1-1.png", "alt": "창문형 제습장 1 전면" },
+        { "src": "/images/product/radm/radm1-2.png", "alt": "창문형 제습장 1 상세" },
+        { "src": "/images/product/radm/radm2-1.png", "alt": "창문형 제습장 2 전면" },
+        { "src": "/images/product/radm/radm2-2.png", "alt": "창문형 제습장 2 상세" }
       ]
     },
     "arms": {
@@ -185,8 +187,7 @@
         { "label": "소비전력(최대)", "value": "180 W" }
       ],
       "images": [
-        { "src": "/images/placeholder-shat.svg", "alt": "복합 환기장치 전면" },
-        { "src": "/images/placeholder-shat.svg", "alt": "복합 환기장치 상세" }
+        { "src": "/images/product/arms/arms.png", "alt": "복합 환기장치 전면" }
       ]
     }
   },

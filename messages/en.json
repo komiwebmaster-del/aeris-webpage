@@ -119,8 +119,8 @@
         { "label": "Max power", "value": "200 W" }
       ],
       "images": [
-        { "src": "/images/placeholder-drdh.svg", "alt": "Ceiling built-in dehumidifier — front" },
-        { "src": "/images/placeholder-drdh.svg", "alt": "Ceiling built-in dehumidifier — detail" }
+        { "src": "/images/product/drdh/drdh.png", "alt": "Ceiling built-in dehumidifier — front" },
+        { "src": "/images/product/drdh/drdh-2.png", "alt": "Ceiling built-in dehumidifier — detail" }
       ]
     },
     "shat": {
@@ -141,8 +141,8 @@
         { "label": "Max power", "value": "120 W" }
       ],
       "images": [
-        { "src": "/images/placeholder-shat.svg", "alt": "Ventilation & dehumidification unit — front" },
-        { "src": "/images/placeholder-shat.svg", "alt": "Ventilation & dehumidification unit — detail" }
+        { "src": "/images/product/shat/shat_1.png", "alt": "Ventilation & dehumidification unit — front" },
+        { "src": "/images/product/shat/shat_2.png", "alt": "Ventilation & dehumidification unit — side" }
       ]
     },
     "radm": {
@@ -163,8 +163,10 @@
         { "label": "Max power", "value": "150 W" }
       ],
       "images": [
-        { "src": "/images/placeholder-radm.svg", "alt": "Window-mounted dehumidifier — front" },
-        { "src": "/images/placeholder-radm.svg", "alt": "Window-mounted dehumidifier — detail" }
+        { "src": "/images/product/radm/radm1-1.png", "alt": "Window-mounted dehumidifier unit 1 — front" },
+        { "src": "/images/product/radm/radm1-2.png", "alt": "Window-mounted dehumidifier unit 1 — detail" },
+        { "src": "/images/product/radm/radm2-1.png", "alt": "Window-mounted dehumidifier unit 2 — front" },
+        { "src": "/images/product/radm/radm2-2.png", "alt": "Window-mounted dehumidifier unit 2 — detail" }
       ]
     },
     "arms": {
@@ -185,8 +187,7 @@
         { "label": "Max power", "value": "180 W" }
       ],
       "images": [
-        { "src": "/images/placeholder-shat.svg", "alt": "Multi-function ventilator — front" },
-        { "src": "/images/placeholder-shat.svg", "alt": "Multi-function ventilator — detail" }
+        { "src": "/images/product/arms/arms.png", "alt": "Multi-function ventilator — front" }
       ]
     }
   },
