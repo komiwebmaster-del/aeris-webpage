@@ -55,10 +55,10 @@ export function FooterSection() {
 
             <Link href="/" aria-label={tc('logoAlt')} className="shrink-0">
               <Image
-                src="/images/logo/aeris-logo-white.png"
+                src="/images/logo/luvair-logo-white.png"
                 alt={tc('logoAlt')}
-                width={2270}
-                height={668}
+                width={1483}
+                height={600}
                 sizes="(min-width: 1024px) 160px, 120px"
                 className="h-auto w-[120px] lg:w-[160px]"
               />

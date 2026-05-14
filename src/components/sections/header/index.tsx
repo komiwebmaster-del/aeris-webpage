@@ -29,10 +29,10 @@ export function HeaderSection() {
         {/* Logo */}
         <Link href="/" aria-label={t('logoAlt')} className="flex items-center">
           <Image
-            src="/images/logo/aeris-logo-navy.png"
+            src="/images/logo/luvair-logo-navy.png"
             alt={t('logoAlt')}
-            width={2270}
-            height={668}
+            width={1483}
+            height={600}
             priority
             sizes="(min-width: 1024px) 128px, 112px"
             className="h-7 w-auto lg:h-8"

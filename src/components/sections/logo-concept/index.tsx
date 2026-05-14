@@ -26,10 +26,10 @@ function LogoArtwork({ alt }: { alt: string }) {
       }}
     >
       <Image
-        src="/images/logo/aeris-logo-navy.png"
+        src="/images/logo/luvair-logo-navy.png"
         alt={alt}
-        width={2270}
-        height={668}
+        width={1483}
+        height={600}
         sizes="(min-width: 1024px) 260px, 220px"
         className="h-auto w-[220px] lg:w-[260px]"
       />
