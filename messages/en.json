@@ -1,15 +1,15 @@
 {
   "common": {
-    "logoAlt": "AERIS by Komipharm"
+    "logoAlt": "Luvair by Komipharm"
   },
   "header": {
     "ctaInquiry": "Free Consultation",
-    "logoAlt": "AERIS by Komipharm"
+    "logoAlt": "Luvair by Komipharm"
   },
   "hero": {
     "eyebrow": "Balcony · Indoor Air Environment Solutions",
     "headline": "Complete Indoor Air\nEnvironment Design\nStarting from the Balcony",
-    "description": "Airflow, backflow, and ventilation issues — solved in one system. AERIS analyzes your space and engineers the solution.",
+    "description": "Airflow, backflow, and ventilation issues — solved in one system. Luvair analyzes your space and engineers the solution.",
     "tags": {
       "engineered": "ENGINEERED",
       "clean": "CLEAN",
@@ -19,52 +19,59 @@
     "ctaSecondary": "View Solutions"
   },
   "brandOverview": {
-    "eyebrow": "ABOUT AERIS - Brand Overview",
+    "eyebrow": "ABOUT LUVAIR - Brand Overview",
     "headlineKo": "Engineering the air.",
-    "description": "<brand>AERIS</brand> is an HVAC brand that integrates ventilation, dehumidification, purification, and sterilization\nto engineer and operate the indoor air environment.",
+    "description": "<brand>Luvair</brand> is an HVAC brand that integrates ventilation, dehumidification, purification, and sterilization\nto engineer and operate the indoor air environment.",
     "cards": {
       "system": {
         "title": "Integrated System Brand",
-        "body": "AERIS is not merely a collection of air-related products.\nWe unify airflow, humidity, cleanliness, and operational efficiency <em>into a single system</em>, managing indoor air environments with greater precision and stability."
+        "body": "Luvair is not merely a collection of air-related products.\nWe unify airflow, humidity, cleanliness, and operational efficiency <em>into a single system</em>, managing indoor air environments with greater precision and stability."
       },
       "engineering": {
         "title": "Engineering-led Philosophy",
-        "body": "The essence of AERIS is not a sentimental image of clean air — it is <em>the discipline of designing air through technology and systems</em>. We treat the invisible with data and engineering, making spatial comfort measurable and repeatable."
+        "body": "The essence of Luvair is not a sentimental image of clean air — it is <em>the discipline of designing air through technology and systems</em>. We treat the invisible with data and engineering, making spatial comfort measurable and repeatable."
       }
     }
   },
   "brandCore": {
-    "eyebrow": "ABOUT AERIS - Brand Core",
-    "headline": "The values AERIS commits to\nfor a better indoor air environment",
+    "eyebrow": "ABOUT Luvair - Brand Core",
+    "headline": "The values Luvair commits to\nfor a better indoor air environment",
     "values": {
-      "engineered": { "ko": "Engineered Design", "en": "Engineered" },
-      "clean":      { "ko": "Clean Air", "en": "Clean" },
-      "quiet":      { "ko": "Quiet Operation", "en": "Quiet" },
-      "reliable":   { "ko": "Reliable Performance", "en": "Reliable" },
-      "premium":    { "ko": "Premium Space", "en": "Premium" }
+      "engineered": { "ko": "Engineered Design", "en": "Engineered", "desc": "Precisely designing airflow through data-based engineering." },
+      "clean":      { "ko": "Clean Air",         "en": "Clean",      "desc": "Managing indoor air with purification and sterilization for a healthy, comfortable environment." },
+      "quiet":      { "ko": "Quiet Operation",   "en": "Quiet",      "desc": "Low-noise design that keeps your space perfectly still." },
+      "reliable":   { "ko": "Reliable Performance", "en": "Reliable", "desc": "Consistent, stable performance backed by proven technology." },
+      "premium":    { "ko": "Premium Space",     "en": "Premium",    "desc": "Elevating your space from installation through daily operation." }
     },
-    "visualAlt": "Isometric illustration of an interior with AERIS integrated indoor-air solutions"
+    "visualAlt": "Isometric illustration of an interior with Luvair integrated indoor-air solutions"
   },
   "brandConcept": {
-    "eyebrow": "ABOUT AERIS - Brand Concept",
-    "items": {
-      "air":        "Air — the most essential element",
-      "engineered": "Designed through technology and structure",
-      "reliable":   "Reliable performance, stable operation",
-      "indoor":     "An approach centered on the indoor environment",
-      "system":     "Operating as one integrated system"
+    "eyebrow": "ABOUT Luvair - Brand Concept",
+    "c1": {
+      "title": "Luv + Air",
+      "description": "Where heartfelt care for users meets\na comfortable air environment"
+    },
+    "c2": {
+      "titlePrefix": "Air as ",
+      "titleHighlight": "Experience",
+      "description": "Expanding air beyond mere function into\nan experience felt within your space"
+    },
+    "c3": {
+      "titlePrefix": "Designed for ",
+      "titleHighlight": "Your Space",
+      "description": "An air environment solution brand that\nworks naturally within everyday spaces"
     }
   },
   "logoConcept": {
     "title": "LOGO CONCEPT",
-    "body": "The AERIS wordmark visualizes our brand philosophy: engineering the indoor air environment.\n\nThe solid uppercase structure embodies the stability, precision, and reliability of an HVAC technology brand.\nThe flowing motif crossing the wordmark symbolizes the movement and circulation of air through space,\nand the integrated air-environment solution operating organically within a single system."
+    "body": "The Luvair wordmark visualizes our brand philosophy: engineering the indoor air environment.\n\nThe solid structure embodies the stability, precision, and reliability of an HVAC technology brand.\nThe flowing motif crossing the wordmark symbolizes the movement and circulation of air through space,\nand the integrated air-environment solution operating organically within a single system."
   },
   "keyVisual": {
     "title": "KEY VISUAL MEANING",
     "items": {
       "wordmark": {
         "title": "Wordmark Structure",
-        "body": "The stable, composed uppercase structure conveys the trust of a technology-driven brand."
+        "body": "The stable, composed structure conveys the trust of a technology-driven brand."
       },
       "flow": {
         "title": "Flow Motif",
@@ -77,10 +84,10 @@
     }
   },
   "why": {
-    "eyebrow": "WHY AERIS?",
+    "eyebrow": "WHY LUVAIR?",
     "subtitle": "Dressing Room HVAC Specialists — From Design to Maintenance",
     "headline": "Poor air quality silently\naccumulates invisible damage",
-    "description": "Mold, odor, and humidity imbalance don't appear overnight.\nAERIS sets the air-quality standard at the HVAC design stage and manages it as a system — before problems occur.",
+    "description": "Mold, odor, and humidity imbalance don't appear overnight.\nLuvair sets the air-quality standard at the HVAC design stage and manages it as a system — before problems occur.",
     "cards": {
       "mold":     { "title": "Mold & Condensation",     "tag": "Climate-Controlled Design" },
       "humidity": { "title": "Humidity Imbalance",      "tag": "Precision Ventilation Design" },
@@ -90,7 +97,7 @@
   },
   "solutions": {
     "eyebrow": "SOLUTIONS",
-    "headline": "AERIS Solutions\nFor Your Space",
+    "headline": "Luvair Solutions\nFor Your Space",
     "groupLabels": {
       "features": "Features",
       "characteristics": "Highlights"
@@ -249,7 +256,7 @@
     "error": "Something went wrong. Please try again later."
   },
   "footer": {
-    "brandLine": "AERIS, a brand by Komipharm International Co., Ltd.",
+    "brandLine": "Luvair, a brand by Komipharm International Co., Ltd.",
     "companyName": "Komipharm Inc.",
     "labels": { "address": "HQ:", "tel": "T.", "email": "E." },
     "addressValue": "17 Gyeongje-ro, Siheung-si, Gyeonggi-do, Republic of Korea",
@@ -259,13 +266,13 @@
     "copyright": "© {year} Komipharm. All rights reserved."
   },
   "seo": {
-    "title": "AERIS — Air, Engineered.",
-    "titleBrand": "AERIS",
-    "description": "AERIS is an HVAC brand that integrates ventilation, dehumidification, purification, and sterilization into a single system to engineer and operate the indoor air environment.",
-    "ogTitle": "AERIS — Engineering the Air",
+    "title": "Luvair — Air, Engineered.",
+    "titleBrand": "Luvair",
+    "description": "Luvair is an HVAC brand that integrates ventilation, dehumidification, purification, and sterilization into a single system to engineer and operate the indoor air environment.",
+    "ogTitle": "Luvair — Engineering the Air",
     "ogDescription": "Ventilation, dehumidification, purification, and sterilization in one system. Indoor air environments, engineered.",
     "ogTagline": "Ventilation, dehumidification, purification, and sterilization — engineered as one indoor-air system.",
-    "ogBadge": "AERIS by Komipharm",
-    "keywords": "AERIS, Komipharm, HVAC, ventilation, heat recovery ventilator, dehumidifier, built-in dehumidifier, air purification, air sterilization, integrated HVAC, indoor air quality, IAQ"
+    "ogBadge": "Luvair by Komipharm",
+    "keywords": "Luvair, Komipharm, HVAC, ventilation, heat recovery ventilator, dehumidifier, built-in dehumidifier, air purification, air sterilization, integrated HVAC, indoor air quality, IAQ"
   }
 }

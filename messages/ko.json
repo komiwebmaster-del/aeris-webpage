@@ -1,15 +1,15 @@
 {
   "common": {
-    "logoAlt": "AERIS by 코미팜"
+    "logoAlt": "Luvair by 코미팜"
   },
   "header": {
     "ctaInquiry": "무료 상담 신청",
-    "logoAlt": "AERIS by 코미팜"
+    "logoAlt": "Luvair by 코미팜"
   },
   "hero": {
     "eyebrow": "발코니 · 실내 공기환경 솔루션",
     "headline": "발코니부터 시작하는\n완전한 실내\n공기환경 설계",
-    "description": "공기의 흐름·역류·환기 부족을 한 번에. AERIS가 공간을 분석하고 시스템을 설계합니다.",
+    "description": "공기의 흐름·역류·환기 부족을 한 번에. Luvair가 공간을 분석하고 시스템을 설계합니다.",
     "tags": {
       "engineered": "ENGINEERED",
       "clean": "CLEAN",
@@ -19,52 +19,59 @@
     "ctaSecondary": "솔루션 보기"
   },
   "brandOverview": {
-    "eyebrow": "ABOUT AERIS - Brand Overview",
+    "eyebrow": "ABOUT LUVAIR - Brand Overview",
     "headlineKo": "공기를 설계하다.",
-    "description": "<brand>AERIS</brand>는 환기, 제습, 정화, 살균 기능을 통합하여\n실내 공기환경을 공학적으로 설계하고 운영하는 HVAC 브랜드입니다.",
+    "description": "<brand>Luvair</brand>는 환기, 제습, 정화, 살균 기능을 통합하여\n실내 공기환경을 공학적으로 설계하고 운영하는 HVAC 브랜드입니다.",
     "cards": {
       "system": {
         "title": "통합 시스템 브랜드",
-        "body": "AERIS는 단순한 공기 관련 제품 브랜드가 아닙니다.\n공기의 흐름, 습도, 청정도, 운용 효율까지 <em>하나의 시스템으로 통합</em>해, 실내 공간의 공기환경을 더 정밀하고 안정적으로 관리하는 브랜드입니다."
+        "body": "Luvair는 단순한 공기 관련 제품 브랜드가 아닙니다.\n공기의 흐름, 습도, 청정도, 운용 효율까지 <em>하나의 시스템으로 통합</em>해, 실내 공간의 공기환경을 더 정밀하고 안정적으로 관리하는 브랜드입니다."
       },
       "engineering": {
         "title": "엔지니어링 기반 철학",
-        "body": "AERIS의 본질은 감성적 공기 이미지가 아니라, <em>공기를 기술과 시스템으로 설계하는 태도</em>에 있습니다. 보이지 않는 공기를 데이터와 엔지니어링으로 다루며, 공간의 쾌적함을 기준으로 만드는 것이 핵심 가치입니다."
+        "body": "Luvair의 본질은 감성적 공기 이미지가 아니라, <em>공기를 기술과 시스템으로 설계하는 태도</em>에 있습니다. 보이지 않는 공기를 데이터와 엔지니어링으로 다루며, 공간의 쾌적함을 기준으로 만드는 것이 핵심 가치입니다."
       }
     }
   },
   "brandCore": {
-    "eyebrow": "ABOUT AERIS - Brand Core",
-    "headline": "더 나은 실내 공기환경을 위해 AERIS가\n약속하는 가치들",
+    "eyebrow": "ABOUT Luvair - Brand Core",
+    "headline": "더 나은 실내 공기환경을 위해\nLuvair가 약속하는 가치들",
     "values": {
-      "engineered": { "ko": "정밀한 설계", "en": "Engineered" },
-      "clean":      { "ko": "깨끗한 공기", "en": "Clean" },
-      "quiet":      { "ko": "조용한 운전", "en": "Quiet" },
-      "reliable":   { "ko": "신뢰 가능한 성능", "en": "Reliable" },
-      "premium":    { "ko": "공간의 품격", "en": "Premium" }
+      "engineered": { "ko": "정밀한 설계",    "en": "Engineered", "desc": "공기의 흐름을 데이터 기반으로 정밀하게 설계합니다." },
+      "clean":      { "ko": "깨끗한 공기",    "en": "Clean",      "desc": "정화·살균 기술로 실내 공기 환경을 위생적이고 쾌적하게 관리합니다." },
+      "quiet":      { "ko": "조용한 운전",    "en": "Quiet",      "desc": "저소음 설계로 공간의 정적을 해치지 않습니다." },
+      "reliable":   { "ko": "신뢰가능한 성능", "en": "Reliable",   "desc": "검증된 기술 기반으로 일관되고 안정적인 성능을 제공합니다." },
+      "premium":    { "ko": "공간의 품격",    "en": "Premium",    "desc": "설치부터 운용까지 공간의 수준을 높이는 경험을 제공합니다." }
     },
-    "visualAlt": "AERIS 통합 공기환경 솔루션이 설치된 실내 아이소메트릭 일러스트"
+    "visualAlt": "Luvair 통합 공기환경 솔루션이 설치된 실내 아이소메트릭 일러스트"
   },
   "brandConcept": {
-    "eyebrow": "ABOUT AERIS - Brand Concept",
-    "items": {
-      "air":        "공기, 가장 본질적인 요소",
-      "engineered": "기술과 구조로 설계하는 방식",
-      "reliable":   "신뢰 가능한 성능, 안정적인 운전",
-      "indoor":     "실내 환경 중심의 접근",
-      "system":     "통합 솔루션으로 작동하는 구조"
+    "eyebrow": "ABOUT Luvair - Brand Concept",
+    "c1": {
+      "title": "Luv + Air",
+      "description": "사용자를 향한 세심한 배려와\n쾌적한 공기 환경의 결합"
+    },
+    "c2": {
+      "titlePrefix": "Air as ",
+      "titleHighlight": "Experience",
+      "description": "공기를 단순한 기능이 아닌\n공간에서 체감되는 경험으로 확장"
+    },
+    "c3": {
+      "titlePrefix": "Designed for ",
+      "titleHighlight": "Your Space",
+      "description": "일상의 공간 안에서 자연스럽게 작동하는\n공기 환경 솔루션 브랜드"
     }
   },
   "logoConcept": {
     "title": "LOGO CONCEPT",
-    "body": "AERIS 로고는 실내 공기환경을 공학적으로 설계하는 브랜드 철학을 워드마크 형태로 시각화한 아이덴티티입니다.\n\n견고한 대문자 구조는 HVAC 기술 브랜드의 안정성, 정밀성, 신뢰성을 표현하며,\n로고를 가로지르는 유선형 모티프는 공간을 흐르는 공기의 이동과 순환, 그리고 하나의 시스템 안에서\n유기적으로 작동하는 통합 공기환경 솔루션의 개념을 상징합니다."
+    "body": "Luvair 로고는 실내 공기환경을 공학적으로 설계하는 브랜드 철학을 워드마크 형태로 시각화한 아이덴티티입니다.\n\n견고한 구조는 HVAC 기술 브랜드의 안정성, 정밀성, 신뢰성을 표현하며,\n로고를 가로지르는 유선형 모티프는 공간을 흐르는 공기의 이동과 순환, 그리고 하나의 시스템 안에서\n유기적으로 작동하는 통합 공기환경 솔루션의 개념을 상징합니다."
   },
   "keyVisual": {
     "title": "KEY VISUAL MEANING",
     "items": {
       "wordmark": {
         "title": "Wordmark Structure",
-        "body": "안정적이고 단정한 대문자 구조를 통해 기술 기반 브랜드의 신뢰감을 표현"
+        "body": "안정적이고 단정한 구조를 통해 기술 기반 브랜드의 신뢰감을 표현"
       },
       "flow": {
         "title": "Flow Motif",
@@ -77,10 +84,10 @@
     }
   },
   "why": {
-    "eyebrow": "WHY AERIS?",
+    "eyebrow": "WHY LUVAIR?",
     "subtitle": "드레스룸 공조 전문 — 설계부터 유지관리까지",
     "headline": "잘못된 공기환경은\n보이지 않게 손상을 누적시킵니다",
-    "description": "곰팡이·악취·습도 불균형은 어느 날 갑자기 생기지 않습니다.\nAERIS는 문제가 발생하기 전, 공조 설계 단계에서 공기환경의 기준을 수립하고 시스템으로 관리합니다.",
+    "description": "곰팡이·악취·습도 불균형은 어느 날 갑자기 생기지 않습니다.\nLuvair는 문제가 발생하기 전, 공조 설계 단계에서 공기환경의 기준을 수립하고 시스템으로 관리합니다.",
     "cards": {
       "mold":     { "title": "곰팡이·결로",     "tag": "항온항습 설계 적용" },
       "humidity": { "title": "습도 불균형",     "tag": "정밀 환기 설계 적용" },
@@ -90,7 +97,7 @@
   },
   "solutions": {
     "eyebrow": "SOLUTIONS",
-    "headline": "공간에 맞는\nAERIS 솔루션",
+    "headline": "공간에 맞는\nLuvair 솔루션",
     "groupLabels": {
       "features": "기능",
       "characteristics": "특징"
@@ -297,7 +304,7 @@
     "error": "전송 중 문제가 발생했습니다. 잠시 후 다시 시도해주세요."
   },
   "footer": {
-    "brandLine": "AERIS, a brand by Komipharm International Co., Ltd.",
+    "brandLine": "Luvair, a brand by Komipharm International Co., Ltd.",
     "companyName": "(주)코미팜",
     "labels": {
       "address": "본사:",
@@ -314,13 +321,13 @@
     "copyright": "© {year} 코미팜. All rights reserved."
   },
   "seo": {
-    "title": "AERIS — Air, Engineered.",
-    "titleBrand": "AERIS",
-    "description": "AERIS는 환기·제습·정화·살균을 하나의 시스템으로 통합하여 실내 공기환경을 정밀하게 설계·운영하는 HVAC 통합 솔루션 브랜드입니다.",
-    "ogTitle": "AERIS — 공기를 설계하다",
+    "title": "Luvair — Air, Engineered.",
+    "titleBrand": "Luvair",
+    "description": "Luvair는 환기·제습·정화·살균을 하나의 시스템으로 통합하여 실내 공기환경을 정밀하게 설계·운영하는 HVAC 통합 솔루션 브랜드입니다.",
+    "ogTitle": "Luvair — 공기를 설계하다",
     "ogDescription": "환기·제습·정화·살균을 하나의 시스템으로. 발코니부터 시작하는 완전한 실내 공기환경 설계.",
     "ogTagline": "환기·제습·정화·살균을 하나의 시스템으로. 실내 공기환경을 공학적으로 설계하는 HVAC 브랜드.",
-    "ogBadge": "AERIS by 코미팜",
-    "keywords": "AERIS, 에리스, 코미팜, HVAC, 환기 시스템, 전열교환기, 제습, 빌트인 제습기, 공기 정화, 공기 살균, 통합 공조, 실내 공기질, 발코니 환기, 드레스룸 제습, IAQ"
+    "ogBadge": "Luvair by 코미팜",
+    "keywords": "Luvair, 루베어, 코미팜, HVAC, 환기 시스템, 전열교환기, 제습, 빌트인 제습기, 공기 정화, 공기 살균, 통합 공조, 실내 공기질, 발코니 환기, 드레스룸 제습, IAQ"
   }
 }
