@@ -47,17 +47,17 @@ export async function generateMetadata({ params }: LocaleParams): Promise<Metada
       .split(',')
       .map((k) => k.trim())
       .filter(Boolean),
-    applicationName: 'AERIS',
-    authors: [{ name: 'AERIS by 코리잡' }],
-    creator: 'AERIS',
-    publisher: 'AERIS by 코리잡',
+    applicationName: 'Luvair',
+    authors: [{ name: 'Luvair by 코미팜' }],
+    creator: 'Luvair',
+    publisher: 'Luvair by 코미팜',
     alternates: {
       canonical: localePath(typedLocale),
       languages,
     },
     openGraph: {
       type: 'website',
-      siteName: 'AERIS',
+      siteName: 'Luvair',
       title: t('ogTitle'),
       description: t('ogDescription'),
       url: localeUrl(typedLocale),

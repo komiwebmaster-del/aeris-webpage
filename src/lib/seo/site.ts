@@ -1,19 +1,19 @@
 import { routing, type Locale } from '@/i18n/routing';
 
 export const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, '') ?? 'https://aeris.example.com';
+  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, '') ?? 'https://luvair.example.com';
 
 export const isProductionDeployment =
   process.env.VERCEL_ENV === 'production' ||
   (process.env.VERCEL_ENV === undefined && process.env.NODE_ENV === 'production');
 
 export const brand = {
-  name: 'AERIS',
-  legalName: 'AERIS by 코리잡',
-  operatorKo: '코리잡',
-  operatorEn: 'Korijob',
+  name: 'Luvair',
+  legalName: 'Luvair by 코미팜',
+  operatorKo: '코미팜',
+  operatorEn: 'Komipharm',
   slogan: 'Air, Engineered.',
-  logoPath: '/images/logo/aeris-logo-navy.png',
+  logoPath: '/images/logo/luvair-logo-navy.png',
 } as const;
 
 export const localeMap: Record<Locale, string> = {

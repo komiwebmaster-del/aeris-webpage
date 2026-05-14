@@ -51,8 +51,8 @@ export function ContactSection() {
         },
         body: JSON.stringify({
           access_key: accessKey,
-          subject: `[AERIS 문의] ${data.name} (${data.type.toUpperCase()})`,
-          from_name: 'AERIS 랜딩 페이지',
+          subject: `[Luvair 문의] ${data.name} (${data.type.toUpperCase()})`,
+          from_name: 'Luvair 랜딩 페이지',
           replyto: data.email,
           botcheck: data.botcheck ?? '',
           이름: data.name,

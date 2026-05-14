@@ -20,7 +20,7 @@ import { LocaleSwitcher } from '@/components/layout/locale-switcher';
 
 const faqItems = [
   {
-    question: 'AERIS 솔루션은 어떤 공간에 적용할 수 있나요?',
+    question: 'Luvair 솔루션은 어떤 공간에 적용할 수 있나요?',
     answer:
       '주거(발코니, 욕실, 드레스룸), 상업 시설, 오피스 등 다양한 실내 공간에 적용 가능합니다. 공간 특성에 맞춘 맞춤형 설계를 제공합니다.',
   },
@@ -60,7 +60,7 @@ export default function DevPage() {
         <Container>
           <div className="flex items-center justify-between">
             <h1 className="text-h2 font-bold text-navy-900">
-              AERIS Dev — Component Library
+              Luvair Dev — Component Library
             </h1>
             <LocaleSwitcher />
           </div>
@@ -176,7 +176,7 @@ export default function DevPage() {
           <h2 className="mt-3 text-h1 font-bold text-navy-900">Eyebrow</h2>
 
           <div className="mt-8 space-y-4">
-            <Eyebrow>왜 AERIS인가?</Eyebrow>
+            <Eyebrow>왜 Luvair인가?</Eyebrow>
             <Eyebrow>SOLUTIONS</Eyebrow>
             <Eyebrow>적용 사례</Eyebrow>
             <Eyebrow>PROCESS</Eyebrow>
@@ -386,7 +386,7 @@ export default function DevPage() {
       <Section background="white" className="border-t border-gray-200 !py-6">
         <Container>
           <p className="text-center text-small text-gray-500">
-            AERIS Design System — Dev Preview
+            Luvair Design System — Dev Preview
           </p>
         </Container>
       </Section>
