@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import { Container } from '@/components/layout/container';
 import { Section } from '@/components/layout/section';
 import { Badge } from '@/components/ui/badge';
@@ -9,6 +8,7 @@ import { Eyebrow } from '@/components/ui/eyebrow';
 import { FadeUp } from '@/components/ui/fade-up';
 import { ArrowRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 
 export function HeroSection() {
   const t = useTranslations('hero');
@@ -31,7 +31,7 @@ export function HeroSection() {
         fill
         priority
         sizes="100vw"
-        className="pointer-events-none absolute inset-0 select-none object-cover opacity-20 mix-blend-screen"
+        className="pointer-events-none absolute inset-0 select-none object-cover opacity-20"
       />
       <div
         aria-hidden
